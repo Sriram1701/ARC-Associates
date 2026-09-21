@@ -2428,48 +2428,84 @@ button {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
   }
 
-  .about-experience-badge .exp-years {
-    font-size: 2.2rem;
-  }
-
-  .about-experience-badge .exp-text {
-    font-size: 0.75rem;
-    letter-spacing: 0.5px;
+  /* About Section Mobile */
+  .about-snapshot-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
   }
 
   .about-snapshot-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+  }
+
+  .about-snapshot-content .badge {
+    align-self: flex-start;
+    margin-bottom: 4px;
   }
 
   .about-snapshot-content h2 {
     font-size: 1.75rem;
-    line-height: 1.28;
-    text-align: center;
-    margin: 10px 0 16px;
+    line-height: 1.25;
+    text-align: left;
+    margin: 8px 0 16px;
+    color: var(--primary);
   }
 
   .about-snapshot-content p {
-    font-size: 0.92rem;
-    line-height: 1.7;
-    text-align: center;
+    font-size: 0.94rem;
+    line-height: 1.72;
+    text-align: left;
+    color: var(--text-muted);
+    margin-bottom: 14px;
   }
 
   .values-checklist {
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 12px;
     width: 100%;
-    max-width: 330px;
+    max-width: 100%;
     text-align: left;
-    margin: 0 auto 24px;
+    margin: 4px 0 24px;
   }
 
   .about-snapshot-content .btn {
     width: 100%;
-    max-width: 300px;
+    max-width: 100%;
     justify-content: center;
+    padding: 13px 20px;
+  }
+
+  .about-image-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .about-img-main {
+    width: 100%;
+    height: 280px;
+    border-radius: var(--radius-lg);
+    object-fit: cover;
+  }
+
+  .about-experience-badge {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    margin: -26px auto 0;
+    width: 85%;
+    max-width: 250px;
+    padding: 14px 18px;
+    text-align: center;
+    border-radius: var(--radius-md);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
   }
 
   /* Promoters Grid Mobile */
