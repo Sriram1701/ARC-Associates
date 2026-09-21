@@ -61,6 +61,18 @@ class ARCApp {
         this.renderAdminPortal();
       }
     });
+
+    // Floating Scroll to Top button visibility toggle
+    const scrollTopBtn = document.getElementById('scroll-to-top-btn');
+    if (scrollTopBtn) {
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 220) {
+          scrollTopBtn.classList.add('visible');
+        } else {
+          scrollTopBtn.classList.remove('visible');
+        }
+      });
+    }
   }
 
   handleRouting() {
