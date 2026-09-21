@@ -2059,7 +2059,56 @@ button {
   font-size: 0.82rem;
   color: var(--text-muted);
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 16px;
+}
+
+.footer-developer-credit {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: var(--text-light);
+}
+
+.developer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--gold-light);
+  font-weight: 700;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.18) 0%, rgba(212, 175, 55, 0.06) 100%);
+  padding: 4px 14px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.15);
+}
+
+.developer-link i {
+  color: #25D366;
+  font-size: 0.95rem;
+  transition: transform var(--transition-fast);
+}
+
+.developer-link:hover {
+  background: var(--gold-gradient-btn);
+  color: #030710;
+  border-color: var(--gold);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.45);
+}
+
+.developer-link:hover i {
+  color: #030710;
+  transform: scale(1.1);
+}
+
+.footer-standards-credit {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--text-muted);
 }
 
 /* ==========================================================================
