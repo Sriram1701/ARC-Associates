@@ -55,13 +55,13 @@ const ARC_DATA = {
       title: "Houses & Commercial Offices",
       shortDesc: "Complete turnkey construction for premium luxury villas, modern residences, commercial complexes, and modern corporate office spaces.",
       icon: "fa-building",
-      heroImg: "https://images.unsplash.com/photo-1541888946425-d0fbb1861563?auto=format&fit=crop&w=1200&q=80",
+      heroImg: "assets/construction-service.jpg",
       samplePhotos: [
         { title: "Contemporary Luxury Villa", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80", tag: "K.K. Nagar, Cuddalore" },
         { title: "Modern Duplex Residence", image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80", tag: "Semmandalam, Cuddalore" },
         { title: "Commercial Plaza & Retail Complex", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80", tag: "Vannarapalayam Main Rd" },
         { title: "Corporate Office Interiors", image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80", tag: "Manjakuppam, Cuddalore" },
-        { title: "Heavy RCC Framework Construction", image: "https://images.unsplash.com/photo-1541888946425-d0fbb1861563?auto=format&fit=crop&w=800&q=80", tag: "Structural Stage" },
+        { title: "Heavy RCC Framework Construction", image: "assets/construction-service.jpg", tag: "Structural Stage" },
         { title: "Architectural 3D Elevation Execution", image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80", tag: "Turnkey Handover" }
       ],
       gallery: [
@@ -257,7 +257,7 @@ const ARC_DATA = {
         { title: "Granite Staircase with Brass Profile Inlay", image: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&q=80", tag: "Bullnose Finish" },
         { title: "Stain-Free Epoxy Grouting Bathroom Tiles", image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80", tag: "100% Waterproof" },
         { title: "Warm Engineered Hardwood Flooring", image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80", tag: "Bedroom Parquet" },
-        { title: "Exterior Anti-Skid Cobblestone Paving", image: "https://images.unsplash.com/photo-1541888946425-d0fbb1861563?auto=format&fit=crop&w=800&q=80", tag: "Driveway Landscaping" }
+        { title: "Exterior Anti-Skid Cobblestone Paving", image: "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=800&q=80", tag: "Driveway Landscaping" }
       ],
       gallery: [
         "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",

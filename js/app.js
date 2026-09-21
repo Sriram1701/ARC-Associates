@@ -256,7 +256,7 @@ class ARCApp {
 
           <div class="services-modern-grid">
             <a href="#service-detail/houses-and-offices" data-nav="service-detail" data-param="houses-and-offices" class="service-modern-card">
-              <img src="https://images.unsplash.com/photo-1541888946425-d0fbb1861563?auto=format&fit=crop&w=800&q=80" alt="Construction Services" class="service-modern-card-img" />
+              <img src="assets/construction-service.jpg" alt="Construction Services" class="service-modern-card-img" />
               <div class="service-modern-card-overlay">
                 <span class="service-modern-card-badge">Turnkey</span>
                 <h3 class="service-modern-card-title">Construction Services</h3>
@@ -593,7 +593,7 @@ class ARCApp {
               </ul>
             </div>
             <div>
-              <img src="https://images.unsplash.com/photo-1541888946425-d0fbb1861563?auto=format&fit=crop&w=1000&q=80" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl);" alt="ARC Construction Works" />
+              <img src="assets/construction-service.jpg" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl);" alt="ARC Construction Works" />
             </div>
           </div>
 
@@ -648,7 +648,7 @@ class ARCApp {
         <div class="container">
           <div class="services-modern-grid">
             <a href="#service-detail/houses-and-offices" data-nav="service-detail" data-param="houses-and-offices" class="service-modern-card">
-              <img src="https://images.unsplash.com/photo-1541888946425-d0fbb1861563?auto=format&fit=crop&w=800&q=80" alt="Construction Services" class="service-modern-card-img" />
+              <img src="assets/construction-service.jpg" alt="Construction Services" class="service-modern-card-img" />
               <div class="service-modern-card-overlay">
                 <span class="service-modern-card-badge">Turnkey Building</span>
                 <h3 class="service-modern-card-title">Construction Services</h3>
