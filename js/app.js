@@ -195,20 +195,20 @@ class ARCApp {
         <div class="container hero-container">
           <div class="hero-content">
             <div class="badge badge-gold">
-              <i class="fas fa-award"></i> 25+ Years of Engineering Excellence
+              <i class="fas fa-crown"></i> 25+ Years of Architectural & Engineering Excellence
             </div>
             <h1 class="hero-title">
-              We Build & Renovate <span class="highlight">Homes & Offices</span> in Cuddalore
+              Crafting & Constructing <span class="text-gold-gradient">Luxury Residences & Landmarks</span> in Cuddalore
             </h1>
             <p class="hero-desc">
-              Trusted civil construction, modern 3D architectural elevations, commercial complexes, and end-to-end renovations backed by 25+ years of rock-solid engineering integrity.
+              Premier civil engineering, bespoke 3D spatial elevations, commercial complexes, and end-to-end luxury renovations backed by 25+ years of certified structural excellence.
             </p>
             <div class="hero-actions">
               <a href="#cost-estimator" data-nav="cost-estimator" class="btn btn-gold">
                 <i class="fas fa-calculator"></i> Calculate Construction Cost
               </a>
               <a href="#contact" data-nav="contact" class="btn btn-outline-light">
-                <i class="fas fa-phone-alt"></i> Get Free Consultation
+                <i class="fas fa-calendar-check"></i> Book Free Consultation
               </a>
             </div>
             <div class="hero-stats">
