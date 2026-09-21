@@ -198,9 +198,7 @@ class ARCApp {
               25+ Years of Architectural &amp; Engineering Excellence
             </div>
             <h1 class="hero-title">
-              Crafting &amp; Constructing<br>
-              <span class="text-gold-gradient">Luxury Residences &amp;</span><br>
-              Landmarks in Cuddalore
+              Crafting &amp; Constructing <span class="text-gold-gradient">Luxury Residences</span> &amp; Landmarks in Cuddalore
             </h1>
             <p class="hero-desc">
               Premier civil engineering, bespoke 3D spatial elevations, commercial complexes, and end-to-end luxury renovations backed by 25+ years of certified structural excellence.
@@ -401,17 +399,17 @@ class ARCApp {
           <div class="google-reviews-header-card">
             <div class="google-score-box">
               <i class="fab fa-google google-icon-large"></i>
-              <div>
-                <div style="display: flex; align-items: center; gap: 8px;">
-                  <strong style="font-size: 1.5rem; color: var(--primary);">4.9 / 5.0 Google Rating</strong>
+              <div class="google-score-details">
+                <div class="google-score-heading-row">
+                  <strong class="google-score-text">4.9 / 5.0 Google Rating</strong>
                   <div class="google-stars">
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                   </div>
                 </div>
-                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 2px;">Over 140+ Verified Google Reviews across Cuddalore</p>
+                <p class="google-score-sub">Over 140+ Verified Google Reviews across Cuddalore</p>
               </div>
             </div>
-            <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+            <div class="google-header-actions">
               <div class="slider-status-tag">
                 <span class="live-dot"></span> Auto-Sliding Feed (Hover to Pause)
               </div>
@@ -426,20 +424,6 @@ class ARCApp {
         <div class="reviews-slider-wrapper">
           <div class="reviews-marquee-track" id="home-marquee-track">
             ${[...d.reviews, ...d.reviews].map(r => this.generateReviewCardHtml(r)).join('')}
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="reviews-slider-controls">
-            <button class="slider-nav-btn" onclick="window.ARC_APP.nudgeReviewMarquee(-380)" title="Slide Left">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="slider-nav-btn" id="marquee-toggle-btn" onclick="window.ARC_APP.toggleMarqueePlay()" title="Pause / Play Slide">
-              <i class="fas fa-pause"></i>
-            </button>
-            <button class="slider-nav-btn" onclick="window.ARC_APP.nudgeReviewMarquee(380)" title="Slide Right">
-              <i class="fas fa-chevron-right"></i>
-            </button>
           </div>
         </div>
       </section>
@@ -622,11 +606,11 @@ class ARCApp {
             </p>
           </div>
 
-          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px;">
+          <div class="promoters-grid">
             ${d.promoters.map(p => `
-              <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 32px; box-shadow: var(--shadow-md); display: flex; gap: 24px; align-items: flex-start;">
-                <img src="${p.image}" alt="${p.name}" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 3px solid var(--accent-light);" />
-                <div>
+              <div class="promoter-card">
+                <img src="${p.image}" alt="${p.name}" class="promoter-avatar" />
+                <div class="promoter-info">
                   <h3 style="font-size: 1.3rem; font-weight: 800; color: var(--primary);">${p.name}</h3>
                   <div style="font-size: 0.85rem; font-weight: 700; color: var(--accent); margin: 4px 0 2px;">${p.role}</div>
                   <div style="font-size: 0.78rem; color: #92400e; background: #fef3c7; border: 1px solid #fcd34d; padding: 3px 10px; border-radius: var(--radius-full); font-weight: 700; margin-bottom: 12px; display: inline-flex; align-items: center; gap: 4px;">
@@ -1272,17 +1256,17 @@ class ARCApp {
           <div class="google-reviews-header-card">
             <div class="google-score-box">
               <i class="fab fa-google google-icon-large"></i>
-              <div>
-                <div style="display: flex; align-items: center; gap: 8px;">
-                  <strong style="font-size: 1.6rem; color: var(--primary);">4.9 / 5.0 Star Rating</strong>
+              <div class="google-score-details">
+                <div class="google-score-heading-row">
+                  <strong class="google-score-text">4.9 / 5.0 Star Rating</strong>
                   <div class="google-stars">
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                   </div>
                 </div>
-                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 4px;">Verified Google Business Profile | Cuddalore, Tamil Nadu</p>
+                <p class="google-score-sub">Verified Google Business Profile | Cuddalore, Tamil Nadu</p>
               </div>
             </div>
-            <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+            <div class="google-header-actions">
               <div class="slider-status-tag">
                 <span class="live-dot"></span> Live Running Feed (${d.reviews.length} Reviews)
               </div>
@@ -1296,20 +1280,6 @@ class ARCApp {
         <div class="reviews-slider-wrapper">
           <div class="reviews-marquee-track" id="reviews-marquee-track">
             ${[...d.reviews, ...d.reviews].map(r => this.generateReviewCardHtml(r)).join('')}
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="reviews-slider-controls">
-            <button class="slider-nav-btn" onclick="window.ARC_APP.nudgeReviewMarquee(-380)" title="Slide Left">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="slider-nav-btn" id="marquee-toggle-btn" onclick="window.ARC_APP.toggleMarqueePlay()" title="Pause / Play Slide">
-              <i class="fas fa-pause"></i>
-            </button>
-            <button class="slider-nav-btn" onclick="window.ARC_APP.nudgeReviewMarquee(380)" title="Slide Right">
-              <i class="fas fa-chevron-right"></i>
-            </button>
           </div>
         </div>
       </section>
