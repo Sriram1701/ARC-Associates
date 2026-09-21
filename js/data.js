@@ -6,7 +6,7 @@
 const ARC_DATA = {
   company: {
     name: "ARC Associates",
-    tagline: "Engineering Excellence & Architectural Craftsmanship Since 1998",
+    tagline: "Engineering & Architectural Craftsmanship Since 1998",
     founded: "1998",
     experienceYears: "25+",
     completedProjects: "580+",

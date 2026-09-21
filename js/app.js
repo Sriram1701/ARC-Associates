@@ -195,13 +195,13 @@ class ARCApp {
         <div class="container hero-container">
           <div class="hero-content">
             <div class="badge badge-gold">
-              25+ Years of Architectural &amp; Engineering Excellence
+              25+ Years of Engineering &amp; Construction
             </div>
             <h1 class="hero-title">
               Crafting &amp; Constructing <span class="text-gold-gradient">Luxury Residences</span> &amp; Landmarks in Cuddalore
             </h1>
             <p class="hero-desc">
-              Premier civil engineering, bespoke 3D spatial elevations, commercial complexes, and end-to-end luxury renovations backed by 25+ years of certified structural excellence.
+              Premier civil engineering, bespoke 3D spatial elevations, commercial complexes, and end-to-end luxury renovations backed by 25+ years of certified structural expertise.
             </p>
             <div class="hero-actions">
               <a href="#cost-estimator" data-nav="cost-estimator" class="btn btn-gold">
