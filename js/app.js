@@ -248,9 +248,10 @@ class ARCApp {
       <section class="section">
         <div class="container">
           <div class="section-header">
-            <h2 class="section-title" style="font-size: 2.4rem;">Our Services – ARC Associates</h2>
+            <div class="badge badge-gold" style="margin: 0 auto 8px;">What We Build</div>
+            <h2 class="section-title">Our Services</h2>
             <p class="section-subtitle">
-              At ARC Associates, we provide complete civil engineering, interior design, and turnkey construction solutions in Cuddalore, delivering high quality, modern, and customized spaces across all residential and commercial sectors.
+              Complete turnkey civil engineering, bespoke interior design, and modern construction solutions in Cuddalore.
             </p>
           </div>
 
@@ -637,10 +638,10 @@ class ARCApp {
     this.viewContainer.innerHTML = `
       <section class="section" style="background: var(--primary-dark); color: #ffffff; padding: 60px 0;">
         <div class="container">
-          <div class="badge badge-gold">Turnkey Engineering & Interior Solutions</div>
-          <h1 style="font-size: 2.8rem; font-weight: 800; margin-top: 10px;">Our Services – ARC Associates</h1>
+          <div class="badge badge-gold">Turnkey Engineering &amp; Interior Solutions</div>
+          <h1 style="font-size: 2.8rem; font-weight: 800; margin-top: 10px;">Our Services</h1>
           <p style="color: var(--text-light); max-width: 720px; margin-top: 10px; font-size: 1.1rem; line-height: 1.7;">
-            At ARC Associates, we provide complete interior design, civil engineering, and construction solutions in Cuddalore, delivering high quality, modern, and customized spaces across all residential, commercial, and industrial sectors.
+            Complete interior design, civil engineering, and construction solutions in Cuddalore, delivering high quality, modern, and customized spaces across all residential, commercial, and industrial sectors.
           </p>
         </div>
       </section>
