@@ -319,13 +319,6 @@ class ARCApp {
       <section class="section section-alt">
         <div class="container">
           <div class="about-snapshot-grid">
-            <div class="about-image-stack">
-              <img class="about-img-main" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=80" alt="ARC Associates Engineers on Site" />
-              <div class="about-experience-badge">
-                <div class="exp-years">1998</div>
-                <div class="exp-text">Established in Cuddalore</div>
-              </div>
-            </div>
             <div class="about-snapshot-content">
               <div class="badge badge-gold">About ARC Associates</div>
               <h2>Building Strong Foundations For Over Two Decades</h2>
@@ -344,6 +337,14 @@ class ARCApp {
               <a href="#about" data-nav="about" class="btn btn-primary">
                 Read Full Company History <i class="fas fa-arrow-right"></i>
               </a>
+            </div>
+
+            <div class="about-image-stack">
+              <img class="about-img-main" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=80" alt="ARC Associates Engineers on Site" />
+              <div class="about-experience-badge">
+                <div class="exp-years">1998</div>
+                <div class="exp-text">Established in Cuddalore</div>
+              </div>
             </div>
           </div>
         </div>
