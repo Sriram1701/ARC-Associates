@@ -56,6 +56,14 @@ const ARC_DATA = {
       shortDesc: "Complete turnkey construction for premium luxury villas, modern residences, commercial complexes, and modern corporate office spaces.",
       icon: "fa-building",
       heroImg: "https://images.unsplash.com/photo-1541888946425-d0fbb1861563?auto=format&fit=crop&w=1200&q=80",
+      samplePhotos: [
+        { title: "Contemporary Luxury Villa", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80", tag: "K.K. Nagar, Cuddalore" },
+        { title: "Modern Duplex Residence", image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80", tag: "Semmandalam, Cuddalore" },
+        { title: "Commercial Plaza & Retail Complex", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80", tag: "Vannarapalayam Main Rd" },
+        { title: "Corporate Office Interiors", image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80", tag: "Manjakuppam, Cuddalore" },
+        { title: "Heavy RCC Framework Construction", image: "https://images.unsplash.com/photo-1541888946425-d0fbb1861563?auto=format&fit=crop&w=800&q=80", tag: "Structural Stage" },
+        { title: "Architectural 3D Elevation Execution", image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80", tag: "Turnkey Handover" }
+      ],
       gallery: [
         "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
         "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
@@ -87,6 +95,14 @@ const ARC_DATA = {
       shortDesc: "Comprehensive remodeling, structural strengthening, vertical floor additions, facade modernizations, and spatial layout reconfigurations.",
       icon: "fa-tools",
       heroImg: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
+      samplePhotos: [
+        { title: "Complete Heritage Home Remodel", image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80", tag: "Manjakuppam, Cuddalore" },
+        { title: "Terrace Waterproofing & Heat Proofing", image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80", tag: "10-Year Warranty" },
+        { title: "Modern Elevation Facelift", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80", tag: "Facade Makeover" },
+        { title: "Structural Beam Retrofitting & Jacketing", image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80", tag: "RCC Strengthening" },
+        { title: "Modern Bathroom & Kitchen Overhaul", image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80", tag: "Interior Remodel" },
+        { title: "Vertical First-Floor Extension", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80", tag: "Floor Addition" }
+      ],
       gallery: [
         "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
         "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80",
@@ -118,6 +134,14 @@ const ARC_DATA = {
       shortDesc: "Concealed heavy-duty wiring, 3-phase industrial panel installations, home automation, architectural LED lighting, and surge protection.",
       icon: "fa-bolt",
       heroImg: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=80",
+      samplePhotos: [
+        { title: "Architectural Cove & False Ceiling Lighting", image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80", tag: "Ambient LED" },
+        { title: "Smart Home Automation Touch Controls", image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80", tag: "App & Touch Panel" },
+        { title: "3-Phase Distribution Box Dressing & MCB", image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80", tag: "Heavy Duty Panel" },
+        { title: "Concealed Wall Conduit & Switch Mounting", image: "https://images.unsplash.com/photo-1565608438257-fac3c27beb36?auto=format&fit=crop&w=800&q=80", tag: "Concealed Work" },
+        { title: "Commercial Office Recessed Modular Lighting", image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80", tag: "Corporate Space" },
+        { title: "Solar Inverter Grid & Surge Protection", image: "https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=800&q=80", tag: "Safety Setup" }
+      ],
       gallery: [
         "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
         "https://images.unsplash.com/photo-1565608438257-fac3c27beb36?auto=format&fit=crop&w=800&q=80",
@@ -149,6 +173,14 @@ const ARC_DATA = {
       shortDesc: "CPVC & UPVC water supply networks, acoustic drainage lines, pressure pump systems, solar water heaters, and luxury sanitary fitting.",
       icon: "fa-faucet-drip",
       heroImg: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80",
+      samplePhotos: [
+        { title: "Luxury Wall-Hung Sanitary & Concealed Tank", image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80", tag: "Kohler / Jaquar" },
+        { title: "Concealed Diverter & Overhead Rain Shower", image: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80", tag: "Master Bathroom" },
+        { title: "Multi-Zone CPVC Pressure Water Line", image: "https://images.unsplash.com/photo-1585338107529-13afc5f02586?auto=format&fit=crop&w=800&q=80", tag: "Pressure Tested" },
+        { title: "Modern Vanity Counter & Basin Mixer", image: "https://images.unsplash.com/photo-1594818379496-da1e345b0ded?auto=format&fit=crop&w=800&q=80", tag: "Sanitary Fitting" },
+        { title: "Hydro-Pneumatic Booster Pump Station", image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80", tag: "High Pressure" },
+        { title: "Rainwater Harvesting Filtration Setup", image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80", tag: "Eco Engineering" }
+      ],
       gallery: [
         "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80",
         "https://images.unsplash.com/photo-1585338107529-13afc5f02586?auto=format&fit=crop&w=800&q=80",
@@ -180,6 +212,14 @@ const ARC_DATA = {
       shortDesc: "Bespoke teak wood main doors, modular kitchens, luxury wardrobes, acoustic wall paneling, and handcrafted interior architectural joinery.",
       icon: "fa-hammer",
       heroImg: "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=1200&q=80",
+      samplePhotos: [
+        { title: "Bespoke Acrylic Modular Kitchen & Island", image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80", tag: "Blum Soft-Close" },
+        { title: "Floor-to-Ceiling Luxury Master Wardrobe", image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80", tag: "Lacquer Glass Finish" },
+        { title: "Handcrafted Carved Teak Main Door", image: "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80", tag: "Solid Burma Teak" },
+        { title: "Living Room TV Media Console & Fluted Panel", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80", tag: "Veneer Finish" },
+        { title: "Traditional Pooja Room Teak Wood Mandapam", image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80", tag: "CNC Jali Work" },
+        { title: "Custom Study Unit & Floating Bookcase", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80", tag: "Marine Plywood" }
+      ],
       gallery: [
         "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80",
         "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
@@ -211,6 +251,14 @@ const ARC_DATA = {
       shortDesc: "Italian marble laying, mirror-finish granite countertops, large-format glazed vitrified tiles (GVT), wooden parquet, and anti-skid outdoor paving.",
       icon: "fa-layer-group",
       heroImg: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80",
+      samplePhotos: [
+        { title: "High-Gloss Italian Botticino Marble", image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80", tag: "Diamond Buffed" },
+        { title: "Large Format 6ft x 4ft PGVT Vitrified Tiles", image: "https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=800&q=80", tag: "Seamless Joints" },
+        { title: "Granite Staircase with Brass Profile Inlay", image: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&q=80", tag: "Bullnose Finish" },
+        { title: "Stain-Free Epoxy Grouting Bathroom Tiles", image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80", tag: "100% Waterproof" },
+        { title: "Warm Engineered Hardwood Flooring", image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80", tag: "Bedroom Parquet" },
+        { title: "Exterior Anti-Skid Cobblestone Paving", image: "https://images.unsplash.com/photo-1541888946425-d0fbb1861563?auto=format&fit=crop&w=800&q=80", tag: "Driveway Landscaping" }
+      ],
       gallery: [
         "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",
         "https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=800&q=80",

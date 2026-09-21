@@ -198,7 +198,9 @@ class ARCApp {
               <i class="fas fa-crown"></i> 25+ Years of Architectural & Engineering Excellence
             </div>
             <h1 class="hero-title">
-              Crafting & Constructing <span class="text-gold-gradient">Luxury Residences & Landmarks</span> in Cuddalore
+              Crafting &amp; Constructing<br>
+              <span class="text-gold-gradient">Luxury Residences &amp;</span><br>
+              Landmarks in Cuddalore
             </h1>
             <p class="hero-desc">
               Premier civil engineering, bespoke 3D spatial elevations, commercial complexes, and end-to-end luxury renovations backed by 25+ years of certified structural excellence.
@@ -213,15 +215,15 @@ class ARCApp {
             </div>
             <div class="hero-stats">
               <div class="stat-item">
-                <h3>${d.company.experienceYears}</h3>
+                <h3 id="hero-stat-years">25+</h3>
                 <p>Years of Service</p>
               </div>
               <div class="stat-item">
-                <h3>${d.company.completedProjects}</h3>
+                <h3 id="hero-stat-projects">580+</h3>
                 <p>Projects Delivered</p>
               </div>
               <div class="stat-item">
-                <h3>${d.company.satisfiedClients}</h3>
+                <h3 id="hero-stat-clients">100%</h3>
                 <p>Client Satisfaction</p>
               </div>
             </div>
@@ -387,7 +389,7 @@ class ARCApp {
 
           <div style="text-align: center; margin-top: 28px;">
             <a href="#projects" data-nav="projects" class="btn btn-secondary">
-              View Full Gallery Grid <i class="fas fa-th-large"></i>
+              View Our Gallery <i class="fas fa-arrow-right"></i>
             </a>
           </div>
         </div>
@@ -463,6 +465,7 @@ class ARCApp {
     `;
 
     this.initCoverflow();
+    this.animateHeroCounters();
   }
 
   /* ==========================================================================
@@ -626,7 +629,9 @@ class ARCApp {
                 <div>
                   <h3 style="font-size: 1.3rem; font-weight: 800; color: var(--primary);">${p.name}</h3>
                   <div style="font-size: 0.85rem; font-weight: 700; color: var(--accent); margin: 4px 0 2px;">${p.role}</div>
-                  <div style="font-size: 0.78rem; color: var(--gold); font-weight: 600; margin-bottom: 12px;">${p.experience}</div>
+                  <div style="font-size: 0.78rem; color: #92400e; background: #fef3c7; border: 1px solid #fcd34d; padding: 3px 10px; border-radius: var(--radius-full); font-weight: 700; margin-bottom: 12px; display: inline-flex; align-items: center; gap: 4px;">
+                    <i class="fas fa-certificate" style="font-size: 0.7rem; color: #d97706;"></i> ${p.experience}
+                  </div>
                   <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 12px;">${p.bio}</p>
                   <div style="font-size: 0.8rem; font-weight: 600; color: var(--text-main); background: var(--bg-surface); padding: 6px 12px; border-radius: 6px;">
                     <strong>Specialization:</strong> ${p.specialization}
@@ -797,6 +802,27 @@ class ARCApp {
             </div>
           </div>
 
+          <!-- Sample Realizations & Photo Gallery -->
+          <div class="section-header" style="margin-top: 50px;">
+            <div class="badge badge-gold">Project Photo Gallery</div>
+            <h2 class="section-title">Sample Realizations &amp; Workmanship</h2>
+            <p class="section-subtitle">
+              Authentic photographic examples of our ${service.title} works executed across Cuddalore.
+            </p>
+          </div>
+
+          <div class="service-gallery-grid">
+            ${(service.samplePhotos || []).map(photo => `
+              <div class="service-gallery-item" onclick="window.ARC_APP.openImageModal('${photo.image}', '${photo.title.replace(/'/g, "\\'")}', '${photo.tag.replace(/'/g, "\\'")}')">
+                <img src="${photo.image}" alt="${photo.title}" loading="lazy" />
+                <div class="service-gallery-overlay">
+                  <span class="service-gallery-tag"><i class="fas fa-tag"></i> ${photo.tag}</span>
+                  <h4 class="service-gallery-title">${photo.title}</h4>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+
           <!-- Step by Step Workflow Process -->
           <div class="section-header">
             <div class="badge badge-gold">Execution Workflow</div>
@@ -957,6 +983,56 @@ class ARCApp {
     `;
 
     this.modalBackdrop.classList.add('open');
+  }
+
+  openImageModal(imgUrl, title, tag) {
+    this.modalBody.innerHTML = `
+      <div>
+        <img src="${imgUrl}" alt="${title}" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: var(--radius-lg) var(--radius-lg) 0 0;" />
+        <div style="padding: 24px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <span class="badge badge-gold"><i class="fas fa-tag"></i> ${tag}</span>
+            <span style="font-size: 0.85rem; color: var(--text-muted);">ARC Associates • Cuddalore</span>
+          </div>
+          <h2 style="font-size: 1.5rem; font-weight: 800; color: var(--primary); margin-bottom: 16px;">${title}</h2>
+          <div style="display: flex; gap: 12px;">
+            <a href="https://wa.me/919382312700?text=Hello%20ARC%20Associates,%20I%20would%20like%20to%20inquire%20about%20a%20project%20design%20similar%20to%20${encodeURIComponent(title)}" target="_blank" class="btn btn-gold" style="flex: 1;">
+              <i class="fab fa-whatsapp"></i> Inquire About This Project
+            </a>
+          </div>
+        </div>
+      </div>
+    `;
+    this.modalBackdrop.classList.add('open');
+  }
+
+  animateHeroCounters() {
+    const counters = [
+      { id: 'hero-stat-years', target: 25, suffix: '+' },
+      { id: 'hero-stat-projects', target: 580, suffix: '+' },
+      { id: 'hero-stat-clients', target: 100, suffix: '%' }
+    ];
+
+    counters.forEach(item => {
+      const el = document.getElementById(item.id);
+      if (!el) return;
+      const duration = 1600;
+      const startTime = performance.now();
+
+      const step = (now) => {
+        const progress = Math.min((now - startTime) / duration, 1);
+        const ease = 1 - Math.pow(1 - progress, 3);
+        const current = Math.floor(ease * item.target);
+        el.textContent = current + item.suffix;
+
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        } else {
+          el.textContent = item.target + item.suffix;
+        }
+      };
+      requestAnimationFrame(step);
+    });
   }
 
   closeModal() {
