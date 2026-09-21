@@ -2437,22 +2437,23 @@ button {
   .about-snapshot-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
+    align-items: center;
     width: 100%;
   }
 
-  .about-snapshot-content .badge {
-    align-self: flex-start;
-    margin-bottom: 4px;
+  .about-badge-center {
+    align-self: center !important;
+    margin: 0 auto 6px !important;
+    text-align: center;
   }
 
-  .about-snapshot-content h2 {
-    font-size: 1.75rem;
+  .about-main-heading {
+    font-size: 1.62rem;
     line-height: 1.25;
-    text-align: left;
-    margin: 8px 0 16px;
+    text-align: center;
+    margin: 4px auto 16px;
     color: var(--primary);
+    max-width: 360px;
   }
 
   .about-snapshot-content p {
@@ -2461,6 +2462,7 @@ button {
     text-align: left;
     color: var(--text-muted);
     margin-bottom: 14px;
+    width: 100%;
   }
 
   .values-checklist {

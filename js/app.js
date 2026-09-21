@@ -320,8 +320,8 @@ class ARCApp {
         <div class="container">
           <div class="about-snapshot-grid">
             <div class="about-snapshot-content">
-              <div class="badge badge-gold">About ARC Associates</div>
-              <h2>Building Strong Foundations For Over Two Decades</h2>
+              <div class="badge badge-gold about-badge-center">About ARC Associates</div>
+              <h2 class="about-main-heading">Building Strong Foundations<br>For Over Two Decades</h2>
               <p>
                 ARC Associates was established in 1998 in Cuddalore with a mission to bring high-grade structural engineering, transparent pricing, and aesthetic architectural innovation to Tamil Nadu. 
               </p>
