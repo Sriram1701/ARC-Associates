@@ -195,7 +195,7 @@ class ARCApp {
         <div class="container hero-container">
           <div class="hero-content">
             <div class="badge badge-gold">
-              <i class="fas fa-crown"></i> 25+ Years of Architectural & Engineering Excellence
+              25+ Years of Architectural &amp; Engineering Excellence
             </div>
             <h1 class="hero-title">
               Crafting &amp; Constructing<br>

@@ -509,7 +509,7 @@ button {
   position: relative;
   background: radial-gradient(circle at 80% 20%, #15223c 0%, #080c16 60%, #03050a 100%);
   color: #ffffff;
-  padding: 95px 0 110px;
+  padding: 55px 0 75px;
   overflow: hidden;
   border-bottom: 1px solid rgba(212, 175, 55, 0.25);
 }
