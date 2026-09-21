@@ -272,12 +272,12 @@ button {
 }
 
 .brand-subtitle {
-  font-size: 0.68rem;
+  font-size: 0.58rem;
   font-weight: 700;
   color: var(--gold-dark);
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-top: 2px;
+  letter-spacing: 0.8px;
+  margin-top: 1px;
 }
 
 .nav-links {
@@ -2195,7 +2195,8 @@ button {
   }
 
   .brand-subtitle {
-    font-size: 0.62rem;
+    font-size: 0.52rem;
+    letter-spacing: 0.5px;
   }
 
   /* Hero Mobile UI */
