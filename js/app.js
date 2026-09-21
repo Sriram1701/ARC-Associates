@@ -233,11 +233,11 @@ class ARCApp {
             </div>
             <div class="floating-satisfaction-card">
               <div class="floating-icon">
-                <i class="fas fa-thumbs-up"></i>
+                <i class="fas fa-shield-alt"></i>
               </div>
               <div>
-                <strong style="font-size: 1.1rem; color: var(--primary);">100% Satisfaction</strong>
-                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">Rock Solid Construction Company</p>
+                <div class="floating-satisfaction-title">100% Satisfaction Guaranteed</div>
+                <div class="floating-satisfaction-sub">Rock Solid Construction & Engineering</div>
               </div>
             </div>
           </div>

@@ -20,7 +20,7 @@
   --gold-soft: rgba(212, 175, 55, 0.12);
   --gold-border: rgba(212, 175, 55, 0.28);
   --gold-gradient: linear-gradient(135deg, #FFFDF8 0%, #F5DE98 30%, #D4AF37 70%, #996515 100%);
-  --gold-gradient-btn: linear-gradient(135deg, #F5DE98 0%, #D4AF37 50%, #B8860B 100%);
+  --gold-gradient-btn: linear-gradient(135deg, #FFE89E 0%, #E5BE4A 40%, #D4AF37 70%, #B8860B 100%);
 
   /* Modern Sapphire Electric Blue Secondary */
   --accent: #0284c7;
@@ -457,26 +457,29 @@ button {
 .badge {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
-  padding: 5px 14px;
+  align-self: flex-start;
+  width: fit-content;
+  max-width: 100%;
+  gap: 8px;
+  padding: 6px 16px;
   border-radius: var(--radius-full);
-  font-size: 0.75rem;
+  font-size: 0.76rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .badge-gold {
-  background: linear-gradient(135deg, rgba(212, 175, 55, 0.18) 0%, rgba(212, 175, 55, 0.06) 100%);
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.22) 0%, rgba(212, 175, 55, 0.08) 100%);
   color: var(--gold-light);
   border: 1px solid rgba(212, 175, 55, 0.45);
-  box-shadow: 0 0 12px rgba(212, 175, 55, 0.2);
+  box-shadow: 0 0 14px rgba(212, 175, 55, 0.2);
 }
 
 .badge-blue {
-  background: rgba(2, 132, 199, 0.1);
+  background: rgba(2, 132, 199, 0.12);
   color: var(--accent-light);
-  border: 1px solid rgba(2, 132, 199, 0.3);
+  border: 1px solid rgba(2, 132, 199, 0.35);
 }
 
 /* ==========================================================================
@@ -487,7 +490,7 @@ button {
   position: relative;
   background: radial-gradient(circle at 80% 20%, #15223c 0%, #080c16 60%, #03050a 100%);
   color: #ffffff;
-  padding: 95px 0 135px;
+  padding: 95px 0 110px;
   overflow: hidden;
   border-bottom: 1px solid rgba(212, 175, 55, 0.25);
 }
@@ -527,6 +530,7 @@ button {
 .hero-content {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 22px;
 }
 
@@ -535,20 +539,22 @@ button {
   font-weight: 800;
   line-height: 1.22;
   letter-spacing: -0.025em;
+  margin: 0;
 }
 
 .hero-desc {
-  font-size: 1.15rem;
+  font-size: 1.12rem;
   color: var(--text-light);
   line-height: 1.75;
   max-width: 620px;
+  margin: 0;
 }
 
 .hero-actions {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-  margin-top: 10px;
+  margin-top: 4px;
 }
 
 .hero-stats {
@@ -557,23 +563,30 @@ button {
   gap: 24px;
   padding-top: 26px;
   border-top: 1px solid rgba(212, 175, 55, 0.2);
-  margin-top: 15px;
+  margin-top: 14px;
+  width: 100%;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
 }
 
 .stat-item h3 {
-  font-size: 2.1rem;
+  font-size: 2.2rem;
   font-weight: 800;
   background: var(--gold-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  line-height: 1;
+  line-height: 1.1;
+  margin-bottom: 4px;
 }
 
 .stat-item p {
-  font-size: 0.85rem;
-  color: var(--text-light);
-  margin-top: 5px;
-  font-weight: 500;
+  font-size: 0.82rem;
+  color: #cbd5e1;
+  font-weight: 600;
+  letter-spacing: 0.2px;
 }
 
 .hero-card-preview {
@@ -584,7 +597,7 @@ button {
   position: relative;
   border-radius: var(--radius-xl);
   overflow: hidden;
-  box-shadow: var(--shadow-xl);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
   border: 1px solid rgba(212, 175, 55, 0.35);
   background: #0f172a;
 }
@@ -602,33 +615,49 @@ button {
 
 .floating-satisfaction-card {
   position: absolute;
-  bottom: -28px;
-  left: -25px;
-  background: rgba(13, 21, 39, 0.92);
+  bottom: -22px;
+  left: -20px;
+  background: rgba(13, 21, 39, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  padding: 18px 26px;
+  padding: 16px 24px;
   border-radius: var(--radius-md);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(212, 175, 55, 0.35);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(212, 175, 55, 0.4);
   color: #ffffff;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 15px;
   animation: floatSlow 4s ease-in-out infinite;
+  z-index: 10;
+}
+
+.floating-satisfaction-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.floating-satisfaction-sub {
+  font-size: 0.8rem;
+  color: #cbd5e1;
+  margin-top: 3px;
+  font-weight: 500;
 }
 
 .floating-icon {
-  width: 52px;
-  height: 52px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   background: var(--gold-gradient-btn);
   color: #030710;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+  flex-shrink: 0;
 }
 
 @keyframes floatSlow {
