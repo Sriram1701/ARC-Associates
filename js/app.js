@@ -1173,11 +1173,12 @@ class ARCApp {
      ========================================================================== */
   generateReviewCardHtml(r) {
     const avatarColors = [
-      'linear-gradient(135deg, #0284c7 0%, #0a192f 100%)',
-      'linear-gradient(135deg, #d97706 0%, #78350f 100%)',
-      'linear-gradient(135deg, #059669 0%, #064e3b 100%)',
-      'linear-gradient(135deg, #7c3aed 0%, #4c1d95 100%)',
-      'linear-gradient(135deg, #db2777 0%, #831843 100%)'
+      'linear-gradient(135deg, #0284c7 0%, #0369a1 100%)',
+      'linear-gradient(135deg, #d97706 0%, #b45309 100%)',
+      'linear-gradient(135deg, #059669 0%, #047857 100%)',
+      'linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%)',
+      'linear-gradient(135deg, #e11d48 0%, #be123c 100%)',
+      'linear-gradient(135deg, #4f46e5 0%, #4338ca 100%)'
     ];
     const colorIndex = (r.author.charCodeAt(0) || 0) % avatarColors.length;
     const avatarBg = avatarColors[colorIndex];
@@ -1187,22 +1188,25 @@ class ARCApp {
         <div class="review-header">
           <div class="review-author-info">
             <div class="author-avatar" style="background: ${avatarBg};">${r.author.charAt(0)}</div>
-            <div>
-              <div class="author-name">${r.author}</div>
-              <div class="author-role">${r.role}</div>
+            <div class="author-details">
+              <h4 class="author-name">${r.author}</h4>
+              <p class="author-role">${r.role}</p>
             </div>
           </div>
-          <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 4px;">
-            <i class="fab fa-google" style="color: #4285F4; font-size: 1.15rem;"></i>
-            <div class="google-stars">
-              ${Array(r.rating).fill('<i class="fas fa-star"></i>').join('')}
-            </div>
+          <div class="review-google-badge" title="Verified Google Review">
+            <i class="fab fa-google"></i>
           </div>
+        </div>
+        <div class="review-rating-row">
+          <div class="google-stars">
+            ${Array(r.rating).fill('<i class="fas fa-star"></i>').join('')}
+          </div>
+          <span class="review-date-badge">${r.date}</span>
         </div>
         <p class="review-text">"${r.text}"</p>
         <div class="review-footer">
-          <span class="verified-badge"><i class="fas fa-check-circle"></i> Verified Google Review</span>
-          <span>${r.date}</span>
+          <span class="verified-badge"><i class="fas fa-check-circle"></i> Verified Review</span>
+          <span class="review-verified-pill"><i class="fas fa-map-marker-alt"></i> Cuddalore</span>
         </div>
       </div>
     `;
