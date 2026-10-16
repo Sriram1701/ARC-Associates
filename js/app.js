@@ -200,56 +200,291 @@ class ARCApp {
     `).join('');
 
     this.viewContainer.innerHTML = `
-      <!-- Hero Section -->
+      <!-- Hero Section with Background Video + Sliding Photos -->
       <section class="hero-section">
-        <div class="hero-pattern"></div>
+        <!-- Media Slideshow Background -->
+        <div class="hero-media-wrapper">
+          <!-- Video Layer (Plays first) -->
+          <video id="hero-bg-video" class="hero-media-layer active" autoplay muted playsinline poster="assets/construction-service.jpg">
+            <source src="assets/hero-bg.mp4" type="video/mp4" />
+          </video>
+          <!-- Photo Slide Layers (Slide in smoothly after video) -->
+          <div class="hero-media-layer" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80');"></div>
+          <div class="hero-media-layer" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80');"></div>
+          <div class="hero-media-layer" style="background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1920&q=80');"></div>
+          <div class="hero-media-layer" style="background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1920&q=80');"></div>
+
+          <!-- Dark Gradient Vignette for Text Contrast -->
+          <div class="hero-media-overlay"></div>
+        </div>
+
         <div class="hero-glow"></div>
+
         <div class="container hero-container">
+          <!-- Left Column: Typography, Checklist, Stats (Matching Reference) -->
           <div class="hero-content">
-            <div class="badge badge-gold">
-              25+ Years of Engineering &amp; Construction
+            <div class="hero-eyebrow-tag">
+              Civil Engineering &amp; Luxury Interiors • Cuddalore &amp; Tamil Nadu
             </div>
-            <h1 class="hero-title">
-              Crafting &amp; Constructing <span class="text-gold-gradient">Luxury Residences</span> &amp; Landmarks in Cuddalore
+
+            <h1 class="hero-title-serif">
+              Interior Designers &amp;<br>
+              <span class="title-line-nowrap">Builders In Cuddalore</span>
             </h1>
+
             <p class="hero-desc">
-              Premier civil engineering, bespoke 3D spatial elevations, commercial complexes, and end-to-end luxury renovations backed by 25+ years of certified structural expertise.
+              Complete civil construction &amp; luxury interiors for 2, 3 &amp; 4 BHK homes and villas, designed and built by one certified local team, at a fixed, itemised price.
             </p>
-            <div class="hero-actions">
-              <a href="#cost-estimator" data-nav="cost-estimator" class="btn btn-gold">
+
+            <div class="hero-checklist">
+              <div class="hero-check-item">
+                <span class="hero-check-icon"><i class="fas fa-check"></i></span>
+                <span>Free 3D design &amp; elevation before you pay anything</span>
+              </div>
+              <div class="hero-check-item">
+                <span class="hero-check-icon"><i class="fas fa-check"></i></span>
+                <span>Itemised quote (BOQ), no hidden costs</span>
+              </div>
+              <div class="hero-check-item">
+                <span class="hero-check-icon"><i class="fas fa-check"></i></span>
+                <span>Fixed handover date • 10-year structural warranty</span>
+              </div>
+            </div>
+
+            <div class="hero-actions" style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: 4px;">
+              <a href="#cost-estimator" data-nav="cost-estimator" class="btn btn-primary" style="padding: 14px 26px; font-weight: 700; box-shadow: 0 8px 24px rgba(212, 175, 55, 0.35);">
                 <i class="fas fa-calculator"></i> Calculate Construction Cost
               </a>
-              <a href="#contact" data-nav="contact" class="btn btn-outline-light">
-                <i class="fas fa-calendar-check"></i> Book Free Consultation
+              <a href="#contact" data-nav="contact" class="btn btn-secondary" style="padding: 14px 24px; font-weight: 700; background: rgba(255, 255, 255, 0.12); backdrop-filter: blur(8px); border-color: rgba(255, 255, 255, 0.35); color: #ffffff;">
+                <i class="fas fa-phone-alt"></i> Book Free Consultation
               </a>
             </div>
+
             <div class="hero-stats">
               <div class="stat-item">
-                <h3 id="hero-stat-years">25+</h3>
-                <p>Years of Service</p>
-              </div>
-              <div class="stat-item">
                 <h3 id="hero-stat-projects">580+</h3>
-                <p>Projects Delivered</p>
+                <p>Homes &amp; Villas Delivered</p>
               </div>
               <div class="stat-item">
-                <h3 id="hero-stat-clients">100%</h3>
-                <p>Client Satisfaction</p>
+                <h3 id="hero-stat-years">25+ YRS</h3>
+                <p>In Cuddalore &amp; Tamil Nadu</p>
+              </div>
+              <div class="stat-item">
+                <h3 id="hero-stat-warranty">10 YRS</h3>
+                <p>Structural Warranty</p>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="hero-card-preview">
-            <div class="hero-main-img-card">
-              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80" alt="ARC Associates Luxury Architecture" />
+      <!-- MATERIALS & HARDWARE WE USE (BRAND TRUST MARQUEE) -->
+      <section class="materials-strip-section">
+        <div class="container">
+          <div class="materials-strip-inner">
+            <div class="materials-strip-label">
+              <i class="fas fa-certificate" style="color: var(--gold-dark); font-size: 0.95rem;"></i>
+              MATERIALS &amp; HARDWARE WE USE
             </div>
-            <div class="floating-satisfaction-card">
-              <div class="floating-icon">
-                <i class="fas fa-shield-alt"></i>
-              </div>
-              <div>
-                <div class="floating-satisfaction-title">100% Satisfaction Guaranteed</div>
-                <div class="floating-satisfaction-sub">Rock Solid Construction & Engineering</div>
+            <div class="materials-marquee-container">
+              <div class="materials-marquee-track">
+                <!-- Group 1 -->
+                <span class="brand-logo-pill" title="CenturyPly">
+                  <svg viewBox="0 0 140 32" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="14,3 17,11 25,11 19,16 21,24 14,19 7,24 9,16 3,11 11,11" fill="#e2231a"/>
+                    <text x="32" y="22" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="15" fill="#e2231a" letter-spacing="-0.5">CENTURYPLY</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Merino Laminates">
+                  <svg viewBox="0 0 110 32" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="55" cy="16" rx="52" ry="14" fill="none" stroke="#bd1e24" stroke-width="2"/>
+                    <text x="55" y="21" font-family="'Times New Roman', serif" font-weight="bold" font-style="italic" font-size="16" fill="#bd1e24" text-anchor="middle">merino</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Franke Kitchen Systems">
+                  <svg viewBox="0 0 110 30" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="110" height="30" rx="3" fill="#e30613"/>
+                    <text x="55" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="15" fill="#ffffff" letter-spacing="3" text-anchor="middle">FRANKE</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Jaquar Bath Fittings">
+                  <svg viewBox="0 0 125 32" xmlns="http://www.w3.org/2000/svg">
+                    <text x="5" y="20" font-family="Arial, sans-serif" font-weight="900" font-style="italic" font-size="20" fill="#006b77" letter-spacing="-0.5">jaquar</text>
+                    <text x="76" y="28" font-family="Arial, sans-serif" font-weight="700" font-size="7" fill="#222" letter-spacing="1">BATHROOM</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Blum Austria">
+                  <svg viewBox="0 0 95 30" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="95" height="30" rx="4" fill="#f36f21"/>
+                    <text x="47" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-style="italic" font-size="18" fill="#ffffff" text-anchor="middle">blum</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Hettich Hardware">
+                  <svg viewBox="0 0 115 32" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="78" y1="5" x2="105" y2="5" stroke="#005b94" stroke-width="2"/>
+                    <line x1="80" y1="8" x2="105" y2="8" stroke="#40b4e5" stroke-width="2"/>
+                    <line x1="82" y1="11" x2="105" y2="11" stroke="#ffcc00" stroke-width="2"/>
+                    <line x1="84" y1="14" x2="105" y2="14" stroke="#e30613" stroke-width="2"/>
+                    <text x="5" y="24" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="18" fill="#000000" letter-spacing="-0.5">Hettich</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Häfele Germany">
+                  <svg viewBox="0 0 110 32" xmlns="http://www.w3.org/2000/svg">
+                    <text x="5" y="23" font-family="Arial, sans-serif" font-weight="900" font-size="18" fill="#707173" letter-spacing="1">H</text>
+                    <circle cx="28" cy="8" r="1.5" fill="#e30613"/>
+                    <circle cx="34" cy="8" r="1.5" fill="#e30613"/>
+                    <text x="23" y="23" font-family="Arial, sans-serif" font-weight="900" font-size="18" fill="#707173" letter-spacing="1">ÄFELE</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Ebco Hardware">
+                  <svg viewBox="0 0 85 30" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="85" height="30" rx="4" fill="#003366"/>
+                    <ellipse cx="42" cy="15" rx="35" ry="11" fill="none" stroke="#ffffff" stroke-width="1.2"/>
+                    <text x="42" y="19" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="13" fill="#ffffff" text-anchor="middle">ebco</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Asian Paints">
+                  <svg viewBox="0 0 135 32" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="14" cy="16" r="10" fill="#e41b23"/>
+                    <path d="M10 16 Q14 8 18 16" fill="none" stroke="#ffed00" stroke-width="3"/>
+                    <text x="32" y="22" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="14" fill="#333333">asianpaints</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Saint-Gobain Glass">
+                  <svg viewBox="0 0 145 32" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 22 Q17 6 30 22" fill="none" stroke="#005596" stroke-width="3"/>
+                    <path d="M9 22 Q17 11 26 22" fill="none" stroke="#009ee0" stroke-width="2"/>
+                    <text x="36" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="12" fill="#005596" letter-spacing="0.5">SAINT-GOBAIN</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Kohler Luxury Sanitaryware">
+                  <svg viewBox="0 0 110 32" xmlns="http://www.w3.org/2000/svg">
+                    <text x="55" y="23" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="17" fill="#111111" letter-spacing="3" text-anchor="middle">KOHLER</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Tata Tiscon Fe550D Steel">
+                  <svg viewBox="0 0 135 32" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="135" height="32" rx="4" fill="#004b87"/>
+                    <text x="67" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="13" fill="#ffffff" letter-spacing="1" text-anchor="middle">TATA TISCON</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="UltraTech Cement">
+                  <svg viewBox="0 0 130 32" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="130" height="32" rx="4" fill="#ffcb05"/>
+                    <text x="65" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="13" fill="#231f20" letter-spacing="0.5" text-anchor="middle">UltraTech</text>
+                  </svg>
+                </span>
+
+                <!-- Group 2 (Exact Duplicate for Infinite Loop) -->
+                <span class="brand-logo-pill" title="CenturyPly">
+                  <svg viewBox="0 0 140 32" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="14,3 17,11 25,11 19,16 21,24 14,19 7,24 9,16 3,11 11,11" fill="#e2231a"/>
+                    <text x="32" y="22" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="15" fill="#e2231a" letter-spacing="-0.5">CENTURYPLY</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Merino Laminates">
+                  <svg viewBox="0 0 110 32" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="55" cy="16" rx="52" ry="14" fill="none" stroke="#bd1e24" stroke-width="2"/>
+                    <text x="55" y="21" font-family="'Times New Roman', serif" font-weight="bold" font-style="italic" font-size="16" fill="#bd1e24" text-anchor="middle">merino</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Franke Kitchen Systems">
+                  <svg viewBox="0 0 110 30" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="110" height="30" rx="3" fill="#e30613"/>
+                    <text x="55" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="15" fill="#ffffff" letter-spacing="3" text-anchor="middle">FRANKE</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Jaquar Bath Fittings">
+                  <svg viewBox="0 0 125 32" xmlns="http://www.w3.org/2000/svg">
+                    <text x="5" y="20" font-family="Arial, sans-serif" font-weight="900" font-style="italic" font-size="20" fill="#006b77" letter-spacing="-0.5">jaquar</text>
+                    <text x="76" y="28" font-family="Arial, sans-serif" font-weight="700" font-size="7" fill="#222" letter-spacing="1">BATHROOM</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Blum Austria">
+                  <svg viewBox="0 0 95 30" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="95" height="30" rx="4" fill="#f36f21"/>
+                    <text x="47" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-style="italic" font-size="18" fill="#ffffff" text-anchor="middle">blum</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Hettich Hardware">
+                  <svg viewBox="0 0 115 32" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="78" y1="5" x2="105" y2="5" stroke="#005b94" stroke-width="2"/>
+                    <line x1="80" y1="8" x2="105" y2="8" stroke="#40b4e5" stroke-width="2"/>
+                    <line x1="82" y1="11" x2="105" y2="11" stroke="#ffcc00" stroke-width="2"/>
+                    <line x1="84" y1="14" x2="105" y2="14" stroke="#e30613" stroke-width="2"/>
+                    <text x="5" y="24" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="18" fill="#000000" letter-spacing="-0.5">Hettich</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Häfele Germany">
+                  <svg viewBox="0 0 110 32" xmlns="http://www.w3.org/2000/svg">
+                    <text x="5" y="23" font-family="Arial, sans-serif" font-weight="900" font-size="18" fill="#707173" letter-spacing="1">H</text>
+                    <circle cx="28" cy="8" r="1.5" fill="#e30613"/>
+                    <circle cx="34" cy="8" r="1.5" fill="#e30613"/>
+                    <text x="23" y="23" font-family="Arial, sans-serif" font-weight="900" font-size="18" fill="#707173" letter-spacing="1">ÄFELE</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Ebco Hardware">
+                  <svg viewBox="0 0 85 30" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="85" height="30" rx="4" fill="#003366"/>
+                    <ellipse cx="42" cy="15" rx="35" ry="11" fill="none" stroke="#ffffff" stroke-width="1.2"/>
+                    <text x="42" y="19" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="13" fill="#ffffff" text-anchor="middle">ebco</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Asian Paints">
+                  <svg viewBox="0 0 135 32" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="14" cy="16" r="10" fill="#e41b23"/>
+                    <path d="M10 16 Q14 8 18 16" fill="none" stroke="#ffed00" stroke-width="3"/>
+                    <text x="32" y="22" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="14" fill="#333333">asianpaints</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Saint-Gobain Glass">
+                  <svg viewBox="0 0 145 32" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 22 Q17 6 30 22" fill="none" stroke="#005596" stroke-width="3"/>
+                    <path d="M9 22 Q17 11 26 22" fill="none" stroke="#009ee0" stroke-width="2"/>
+                    <text x="36" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="12" fill="#005596" letter-spacing="0.5">SAINT-GOBAIN</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Kohler Luxury Sanitaryware">
+                  <svg viewBox="0 0 110 32" xmlns="http://www.w3.org/2000/svg">
+                    <text x="55" y="23" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="17" fill="#111111" letter-spacing="3" text-anchor="middle">KOHLER</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Tata Tiscon Fe550D Steel">
+                  <svg viewBox="0 0 135 32" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="135" height="32" rx="4" fill="#004b87"/>
+                    <text x="67" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="13" fill="#ffffff" letter-spacing="1" text-anchor="middle">TATA TISCON</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="UltraTech Cement">
+                  <svg viewBox="0 0 130 32" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="130" height="32" rx="4" fill="#ffcb05"/>
+                    <text x="65" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="13" fill="#231f20" letter-spacing="0.5" text-anchor="middle">UltraTech</text>
+                  </svg>
+                </span>
               </div>
             </div>
           </div>
@@ -268,62 +503,191 @@ class ARCApp {
           </div>
 
           <div class="services-modern-grid">
-            <a href="#service-detail/houses-and-offices" data-nav="service-detail" data-param="houses-and-offices" class="service-modern-card">
-              <img src="assets/construction-service.jpg" alt="Construction Services" class="service-modern-card-img" />
+            <!-- Featured Wide Card at Top: Home & Villa Interiors -->
+            <a href="#service-detail/carpentry" data-nav="service-detail" data-param="carpentry" class="service-modern-card featured-wide">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80" alt="Home & Villa Interiors" class="service-modern-card-img" loading="lazy" />
               <div class="service-modern-card-overlay">
-                <span class="service-modern-card-badge">Turnkey</span>
+                <div class="service-card-meta">
+                  <span class="service-card-num">01</span>
+                  <span class="service-card-tagline">Flagship Specialty • Turnkey Living</span>
+                </div>
+                <h3 class="service-modern-card-title" style="font-size: 1.75rem;">Home &amp; Villa Interiors</h3>
+                <div class="service-card-action">
+                  <span>Explore Full Portfolio</span>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+            </a>
+
+            <a href="#service-detail/houses-and-offices" data-nav="service-detail" data-param="houses-and-offices" class="service-modern-card">
+              <img src="assets/construction-service.jpg" alt="Construction Services" class="service-modern-card-img" loading="lazy" />
+              <div class="service-modern-card-overlay">
+                <div class="service-card-meta">
+                  <span class="service-card-num">02</span>
+                  <span class="service-card-tagline">Civil &amp; Structural</span>
+                </div>
                 <h3 class="service-modern-card-title">Construction Services</h3>
+                <div class="service-card-action">
+                  <span>Explore Projects</span>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
               </div>
             </a>
 
             <a href="#service-detail/carpentry" data-nav="service-detail" data-param="carpentry" class="service-modern-card">
-              <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="Modular Kitchen" class="service-modern-card-img" />
+              <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="Modular Kitchen" class="service-modern-card-img" loading="lazy" />
               <div class="service-modern-card-overlay">
-                <span class="service-modern-card-badge">Bespoke</span>
+                <div class="service-card-meta">
+                  <span class="service-card-num">03</span>
+                  <span class="service-card-tagline">Bespoke Cabinetry</span>
+                </div>
                 <h3 class="service-modern-card-title">Modular Kitchen</h3>
+                <div class="service-card-action">
+                  <span>Explore Designs</span>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
               </div>
             </a>
 
             <a href="#service-detail/houses-and-offices" data-nav="service-detail" data-param="houses-and-offices" class="service-modern-card">
-              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Office Interiors" class="service-modern-card-img" />
+              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Office Interiors" class="service-modern-card-img" loading="lazy" />
               <div class="service-modern-card-overlay">
-                <span class="service-modern-card-badge">Commercial</span>
+                <div class="service-card-meta">
+                  <span class="service-card-num">04</span>
+                  <span class="service-card-tagline">Corporate Workspaces</span>
+                </div>
                 <h3 class="service-modern-card-title">Office Interiors</h3>
+                <div class="service-card-action">
+                  <span>Explore Office</span>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
               </div>
             </a>
 
             <a href="#service-detail/houses-and-offices" data-nav="service-detail" data-param="houses-and-offices" class="service-modern-card">
-              <img src="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=800&q=80" alt="Commercial Interiors" class="service-modern-card-img" />
+              <img src="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=800&q=80" alt="Commercial Interiors" class="service-modern-card-img" loading="lazy" />
               <div class="service-modern-card-overlay">
-                <span class="service-modern-card-badge">Retail & Malls</span>
+                <div class="service-card-meta">
+                  <span class="service-card-num">05</span>
+                  <span class="service-card-tagline">Retail &amp; Showrooms</span>
+                </div>
                 <h3 class="service-modern-card-title">Commercial Interiors</h3>
+                <div class="service-card-action">
+                  <span>Explore Commercial</span>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
               </div>
             </a>
 
             <a href="#service-detail/renovations" data-nav="service-detail" data-param="renovations" class="service-modern-card">
-              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Renovation Services" class="service-modern-card-img" />
+              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Renovation Services" class="service-modern-card-img" loading="lazy" />
               <div class="service-modern-card-overlay">
-                <span class="service-modern-card-badge">10-Yr Warranty</span>
+                <div class="service-card-meta">
+                  <span class="service-card-num">06</span>
+                  <span class="service-card-tagline">Restoration &amp; Remodeling</span>
+                </div>
                 <h3 class="service-modern-card-title">Renovation Services</h3>
+                <div class="service-card-action">
+                  <span>Explore Renovations</span>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
               </div>
             </a>
 
             <a href="#service-detail/electrical" data-nav="service-detail" data-param="electrical" class="service-modern-card">
-              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="False Ceiling & Lighting" class="service-modern-card-img" />
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="False Ceiling & Lighting" class="service-modern-card-img" loading="lazy" />
               <div class="service-modern-card-overlay">
-                <span class="service-modern-card-badge">Architectural</span>
-                <h3 class="service-modern-card-title">False Ceiling & Lighting</h3>
+                <div class="service-card-meta">
+                  <span class="service-card-num">07</span>
+                  <span class="service-card-tagline">Architectural Ambiance</span>
+                </div>
+                <h3 class="service-modern-card-title">False Ceiling &amp; Lighting</h3>
+                <div class="service-card-action">
+                  <span>Explore Lighting</span>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
               </div>
             </a>
+          </div>
+        </div>
+      </section>
 
-            <!-- Featured Wide Card at Bottom -->
-            <a href="#service-detail/carpentry" data-nav="service-detail" data-param="carpentry" class="service-modern-card featured-wide">
-              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Home Interiors" class="service-modern-card-img" />
-              <div class="service-modern-card-overlay">
-                <span class="service-modern-card-badge">Luxury Craftsmanship</span>
-                <h3 class="service-modern-card-title" style="font-size: 1.6rem;">Home & Villa Interiors</h3>
+      <!-- WHY CUDDALORE HOMEOWNERS CHOOSE US (Matching Reference Design) -->
+      <section class="why-choose-section">
+        <div class="container">
+          <div class="why-choose-grid">
+            <!-- Left Column: Title, Intro & CTA -->
+            <div class="why-choose-left">
+              <div class="why-choose-eyebrow">WHY ARC ASSOCIATES</div>
+              <h2 class="why-choose-heading">
+                Why Cuddalore<br>Homeowners Choose<br>Us
+              </h2>
+              <p class="why-choose-desc">
+                One team designs, manufactures and installs your interiors. You get a fixed price, a fixed date and a finish that matches the 3D design.
+              </p>
+              <a href="#contact" data-nav="contact" class="why-choose-cta-btn">
+                Book a free studio visit
+              </a>
+            </div>
+
+            <!-- Right Column: 2x2 Feature Cards -->
+            <div class="why-choose-cards-grid">
+              <!-- Card 01 -->
+              <div class="why-choose-card">
+                <div class="why-card-top">
+                  <div class="why-card-icon-badge">
+                    <i class="fas fa-clipboard-list"></i>
+                  </div>
+                  <div class="why-card-number">01</div>
+                </div>
+                <h3 class="why-card-title">Itemised quote</h3>
+                <p class="why-card-desc">
+                  Every cabinet, finish and fitting priced line by line. The price you sign is the price you pay.
+                </p>
               </div>
-            </a>
+
+              <!-- Card 02 -->
+              <div class="why-choose-card">
+                <div class="why-card-top">
+                  <div class="why-card-icon-badge">
+                    <i class="far fa-clock"></i>
+                  </div>
+                  <div class="why-card-number">02</div>
+                </div>
+                <h3 class="why-card-title">Fixed handover date</h3>
+                <p class="why-card-desc">
+                  Your move-in date is written into the contract, with a dedicated project manager.
+                </p>
+              </div>
+
+              <!-- Card 03 -->
+              <div class="why-choose-card">
+                <div class="why-card-top">
+                  <div class="why-card-icon-badge">
+                    <i class="fas fa-wrench"></i>
+                  </div>
+                  <div class="why-card-number">03</div>
+                </div>
+                <h3 class="why-card-title">In-house craftsmen</h3>
+                <p class="why-card-desc">
+                  Our own designers and carpenters, not subcontractors, so the finish matches the 3D design.
+                </p>
+              </div>
+
+              <!-- Card 04 -->
+              <div class="why-choose-card">
+                <div class="why-card-top">
+                  <div class="why-card-icon-badge">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="why-card-number">04</div>
+                </div>
+                <h3 class="why-card-title">Visit our studio</h3>
+                <p class="why-card-desc">
+                  See and touch materials at #23/33 K.K. Nagar, near Vannarapalayam, Cuddalore.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -424,9 +788,6 @@ class ARCApp {
               </div>
             </div>
             <div class="google-header-actions">
-              <div class="slider-status-tag">
-                <span class="live-dot"></span> Auto-Sliding Feed (Hover to Pause)
-              </div>
               <a href="#reviews" data-nav="reviews" class="btn btn-sm btn-primary">
                 <i class="fas fa-pen"></i> Write / View All
               </a>
@@ -464,32 +825,229 @@ class ARCApp {
 
     this.initCoverflow();
     this.animateHeroCounters();
+    this.initHeroMediaSlideshow();
   }
 
   /* ==========================================================================
-     3D COVERFLOW PROJECT CAROUSEL CONTROLLER
+     HERO BACKGROUND VIDEO + PHOTO SLIDESHOW ENGINE
+     ========================================================================== */
+  initHeroMediaSlideshow() {
+    const video = document.getElementById('hero-bg-video');
+    const layers = document.querySelectorAll('.hero-media-layer');
+    if (!layers || layers.length <= 1) return;
+
+    if (this.heroMediaInterval) {
+      clearInterval(this.heroMediaInterval);
+      this.heroMediaInterval = null;
+    }
+    if (this.heroVideoTimeout) {
+      clearTimeout(this.heroVideoTimeout);
+      this.heroVideoTimeout = null;
+    }
+
+    let currentIndex = 0;
+
+    const setLayer = (targetIdx) => {
+      layers.forEach((l, i) => {
+        if (i === targetIdx) {
+          l.classList.add('active');
+          if (l.tagName === 'VIDEO') {
+            l.currentTime = 0;
+            l.play().catch(() => {});
+          }
+        } else {
+          l.classList.remove('active');
+          if (l.tagName === 'VIDEO') {
+            l.pause();
+          }
+        }
+      });
+      currentIndex = targetIdx;
+    };
+
+    const nextPhotoSlide = () => {
+      let nextIdx = (currentIndex + 1) % layers.length;
+      setLayer(nextIdx);
+
+      // If next is back to video (index 0)
+      if (nextIdx === 0) {
+        if (this.heroMediaInterval) {
+          clearInterval(this.heroMediaInterval);
+          this.heroMediaInterval = null;
+        }
+      }
+    };
+
+    const startPhotoSlideshow = () => {
+      nextPhotoSlide();
+      if (!this.heroMediaInterval) {
+        this.heroMediaInterval = setInterval(nextPhotoSlide, 4500);
+      }
+    };
+
+    if (video) {
+      // When video ends, smoothly slide to next photos
+      video.addEventListener('ended', () => {
+        startPhotoSlideshow();
+      });
+
+      // Video timeout fallback: if video is very long or paused by browser policy, slide after 12s
+      this.heroVideoTimeout = setTimeout(() => {
+        if (currentIndex === 0) {
+          startPhotoSlideshow();
+        }
+      }, 12000);
+    } else {
+      this.heroMediaInterval = setInterval(nextPhotoSlide, 4500);
+    }
+  }
+
+  selectQuoteHomeType(type, btnEl) {
+    const parent = document.getElementById('quote-home-types');
+    if (parent) {
+      parent.querySelectorAll('.quote-type-btn').forEach(b => b.classList.remove('active'));
+    }
+    if (btnEl) btnEl.classList.add('active');
+    const hidden = document.getElementById('hero-quote-type');
+    if (hidden) hidden.value = type;
+  }
+
+  handleHeroQuoteSubmit(event) {
+    if (event) event.preventDefault();
+    const nameInput = document.getElementById('hero-quote-name');
+    const phoneInput = document.getElementById('hero-quote-phone');
+    const typeInput = document.getElementById('hero-quote-type');
+    const localitySelect = document.getElementById('hero-quote-locality');
+
+    const name = nameInput ? nameInput.value.trim() : '';
+    const phone = phoneInput ? phoneInput.value.trim() : '';
+    const homeType = typeInput ? typeInput.value : '3 BHK';
+    const locality = localitySelect ? localitySelect.value : 'Cuddalore';
+
+    if (!name || !phone) {
+      alert('Please enter your Name and Mobile Number.');
+      return;
+    }
+
+    if (phone.length < 10) {
+      alert('Please enter a valid 10-digit mobile number.');
+      return;
+    }
+
+    // Prefill WhatsApp message
+    const msg = encodeURIComponent(
+      `Hello ARC Associates, I would like to get a Free 3D Design & Itemised Quote for my ${homeType} home in ${locality}, Cuddalore.\n\nClient Name: ${name}\nMobile: +91 ${phone}`
+    );
+
+    // Show instant success modal
+    this.openModal(`
+      <div style="text-align: center; padding: 36px 20px;">
+        <div style="width: 76px; height: 76px; border-radius: 50%; background: #e8f5e9; color: #2e7d32; display: flex; align-items: center; justify-content: center; font-size: 2.2rem; margin: 0 auto 20px;">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <h3 style="font-size: 1.8rem; font-weight: 800; color: #1e1814; margin-bottom: 12px; font-family: 'Playfair Display', serif;">
+          Inquiry Received Successfully!
+        </h3>
+        <p style="color: #645a52; font-size: 1.05rem; line-height: 1.6; max-width: 480px; margin: 0 auto 24px;">
+          Thank you <strong>${name}</strong>. Er. Ramanathan &amp; ARC Associates architecture team will call you within 20 minutes for your <strong>${homeType}</strong> project in <strong>${locality}</strong>.
+        </p>
+        <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+          <a href="https://wa.me/919382312700?text=${msg}" target="_blank" class="btn btn-gold" style="font-weight: 700;">
+            <i class="fab fa-whatsapp"></i> Chat Now on WhatsApp
+          </a>
+          <button onclick="window.ARC_APP.closeModal()" class="btn btn-secondary">
+            Close
+          </button>
+        </div>
+      </div>
+    `);
+
+    // Reset inputs
+    if (nameInput) nameInput.value = '';
+    if (phoneInput) phoneInput.value = '';
+  }
+
+  /* ==========================================================================
+     3D COVERFLOW PROJECT CAROUSEL CONTROLLER (INFINITE SMOOTH 3D LOOP)
      ========================================================================== */
   initCoverflow() {
     this.coverflowFilter = 'all';
-    this.coverflowProjects = window.ARC_ADMIN.getAllProjects();
-    this.coverflowIndex = Math.floor(this.coverflowProjects.length / 2);
-    this.renderCoverflowStage();
+    this.loadCoverflowData('all');
+    this.buildCoverflowDOM();
 
-    // Auto-advance every 4.5 seconds
-    if (this.coverflowInterval) clearInterval(this.coverflowInterval);
+    // Auto-advance loop every 3.5 seconds
+    this.startCoverflowAutoPlay();
+
     const container = document.querySelector('.coverflow-container');
     if (container) {
-      this.coverflowInterval = setInterval(() => {
-        this.coverflowNext();
-      }, 4500);
+      container.addEventListener('mouseenter', () => this.stopCoverflowAutoPlay());
+      container.addEventListener('mouseleave', () => this.startCoverflowAutoPlay());
 
-      container.addEventListener('mouseenter', () => clearInterval(this.coverflowInterval));
-      container.addEventListener('mouseleave', () => {
-        this.coverflowInterval = setInterval(() => {
-          this.coverflowNext();
-        }, 4500);
-      });
+      // Touch swipe support for mobile devices
+      let touchStartX = 0;
+      container.addEventListener('touchstart', (e) => {
+        if (e.changedTouches && e.changedTouches[0]) {
+          touchStartX = e.changedTouches[0].screenX;
+        }
+        this.stopCoverflowAutoPlay();
+      }, { passive: true });
+
+      container.addEventListener('touchend', (e) => {
+        if (e.changedTouches && e.changedTouches[0]) {
+          const diffX = e.changedTouches[0].screenX - touchStartX;
+          if (diffX > 45) {
+            this.coverflowPrev();
+          } else if (diffX < -45) {
+            this.coverflowNext();
+          }
+        }
+        this.startCoverflowAutoPlay();
+      }, { passive: true });
     }
+  }
+
+  startCoverflowAutoPlay() {
+    this.stopCoverflowAutoPlay();
+    this.coverflowInterval = setInterval(() => {
+      this.coverflowNext();
+    }, 3600);
+  }
+
+  stopCoverflowAutoPlay() {
+    if (this.coverflowInterval) {
+      clearInterval(this.coverflowInterval);
+      this.coverflowInterval = null;
+    }
+  }
+
+  loadCoverflowData(category) {
+    this.coverflowFilter = category;
+    const all = window.ARC_ADMIN.getAllProjects();
+    let filtered = [];
+
+    if (category === 'all') {
+      filtered = all;
+    } else if (category === 'Cuddalore') {
+      filtered = all.filter(p => p.location && p.location.toLowerCase().includes('cuddalore'));
+    } else {
+      filtered = all.filter(p => 
+        (p.category && p.category.toLowerCase().includes(category.toLowerCase())) || 
+        (p.title && p.title.toLowerCase().includes(category.toLowerCase()))
+      );
+    }
+
+    if (!filtered || filtered.length === 0) {
+      filtered = all;
+    }
+
+    // Ensure at least 6 cards so the 3D stage (-2, -1, 0, 1, 2) is always completely full in an endless loop
+    let loopedList = [...filtered];
+    while (loopedList.length < 6) {
+      loopedList = loopedList.concat(filtered);
+    }
+
+    this.coverflowProjects = loopedList;
+    this.coverflowIndex = 0;
   }
 
   filterCoverflow(category, btnEl) {
@@ -498,51 +1056,55 @@ class ARCApp {
       btnEl.classList.add('active');
     }
 
-    this.coverflowFilter = category;
-    const all = window.ARC_ADMIN.getAllProjects();
-    if (category === 'all') {
-      this.coverflowProjects = all;
-    } else if (category === 'Cuddalore') {
-      this.coverflowProjects = all.filter(p => p.location.toLowerCase().includes('cuddalore'));
-    } else {
-      this.coverflowProjects = all.filter(p => 
-        p.category.toLowerCase().includes(category.toLowerCase()) || 
-        p.title.toLowerCase().includes(category.toLowerCase())
-      );
-      if (this.coverflowProjects.length === 0) {
-        this.coverflowProjects = all;
-      }
-    }
-
-    this.coverflowIndex = Math.floor(this.coverflowProjects.length / 2);
-    this.renderCoverflowStage();
+    this.loadCoverflowData(category);
+    this.buildCoverflowDOM();
   }
 
-  renderCoverflowStage() {
+  buildCoverflowDOM() {
     const stage = document.getElementById('coverflow-stage');
     if (!stage || !this.coverflowProjects || this.coverflowProjects.length === 0) return;
 
-    stage.innerHTML = this.coverflowProjects.map((p, idx) => {
-      const diff = idx - this.coverflowIndex;
-      let posClass = 'pos-hidden';
-
-      if (diff === 0) posClass = 'pos-center active';
-      else if (diff === -1) posClass = 'pos-left-1';
-      else if (diff === 1) posClass = 'pos-right-1';
-      else if (diff === -2) posClass = 'pos-left-2';
-      else if (diff === 2) posClass = 'pos-right-2';
-      else posClass = 'pos-hidden';
-
-      return `
-        <div class="coverflow-card ${posClass}" onclick="window.ARC_APP.onCoverflowCardClick(${idx}, '${p.id}')">
-          <img src="${p.image}" alt="${p.title}" loading="lazy" />
-          <div class="coverflow-card-caption">
-            <h4 class="coverflow-card-title">${p.title}</h4>
-            <div class="coverflow-card-sub"><i class="fas fa-map-marker-alt"></i> ${p.location}</div>
-          </div>
+    stage.innerHTML = this.coverflowProjects.map((p, idx) => `
+      <div class="coverflow-card pos-hidden" data-idx="${idx}" onclick="window.ARC_APP.onCoverflowCardClick(${idx}, '${p.id}')">
+        <img src="${p.image}" alt="${p.title}" loading="lazy" />
+        <div class="coverflow-card-caption">
+          <h4 class="coverflow-card-title">${p.title}</h4>
+          <div class="coverflow-card-sub"><i class="fas fa-map-marker-alt"></i> ${p.location}</div>
         </div>
-      `;
-    }).join('');
+      </div>
+    `).join('');
+
+    this.updateCoverflowPositions();
+  }
+
+  updateCoverflowPositions() {
+    const stage = document.getElementById('coverflow-stage');
+    if (!stage) return;
+    const cards = stage.querySelectorAll('.coverflow-card');
+    const total = this.coverflowProjects.length;
+    if (total === 0 || cards.length !== total) return;
+
+    cards.forEach((card, idx) => {
+      // Calculate shortest circular difference modulo total
+      let diff = idx - this.coverflowIndex;
+      while (diff > total / 2) diff -= total;
+      while (diff < -total / 2) diff += total;
+
+      card.className = 'coverflow-card';
+      if (diff === 0) {
+        card.classList.add('pos-center', 'active');
+      } else if (diff === -1) {
+        card.classList.add('pos-left-1');
+      } else if (diff === 1) {
+        card.classList.add('pos-right-1');
+      } else if (diff === -2) {
+        card.classList.add('pos-left-2');
+      } else if (diff === 2) {
+        card.classList.add('pos-right-2');
+      } else {
+        card.classList.add('pos-hidden');
+      }
+    });
   }
 
   onCoverflowCardClick(idx, projectId) {
@@ -550,22 +1112,22 @@ class ARCApp {
       // Center card clicked -> open details modal
       this.openProjectModal(projectId);
     } else {
-      // Side card clicked -> center it
+      // Side card clicked -> smoothly rotate it to center
       this.coverflowIndex = idx;
-      this.renderCoverflowStage();
+      this.updateCoverflowPositions();
     }
   }
 
   coverflowNext() {
     if (!this.coverflowProjects || this.coverflowProjects.length === 0) return;
     this.coverflowIndex = (this.coverflowIndex + 1) % this.coverflowProjects.length;
-    this.renderCoverflowStage();
+    this.updateCoverflowPositions();
   }
 
   coverflowPrev() {
     if (!this.coverflowProjects || this.coverflowProjects.length === 0) return;
     this.coverflowIndex = (this.coverflowIndex - 1 + this.coverflowProjects.length) % this.coverflowProjects.length;
-    this.renderCoverflowStage();
+    this.updateCoverflowPositions();
   }
 
   /* ==========================================================================
