@@ -73,6 +73,82 @@ class ARCApp {
         }
       });
     }
+
+    // Initialize luxury top reading progress bar
+    this.initScrollProgress();
+  }
+
+  /* ==========================================================================
+     SCROLL PROGRESS & SCROLL REVEAL ENGINES
+     ========================================================================== */
+  initScrollProgress() {
+    const bar = document.getElementById('scroll-progress-bar');
+    if (!bar) return;
+    const update = () => {
+      const scrollTotal = document.documentElement.scrollHeight - window.innerHeight;
+      if (scrollTotal > 0) {
+        const pct = Math.min(Math.max((window.scrollY / scrollTotal) * 100, 0), 100);
+        bar.style.width = `${pct}%`;
+      } else {
+        bar.style.width = '0%';
+      }
+    };
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update, { passive: true });
+    update();
+  }
+
+  initScrollReveal() {
+    if (!('IntersectionObserver' in window)) {
+      document.querySelectorAll('[data-reveal]').forEach(el => el.classList.add('is-revealed'));
+      return;
+    }
+
+    if (this.scrollObserver) {
+      this.scrollObserver.disconnect();
+    }
+
+    // Auto-discover section headers and key cards across any page
+    const autoElements = document.querySelectorAll(`
+      .section-header, 
+      .service-modern-card, 
+      .portfolio-item, 
+      .why-choose-card,
+      .about-image-stack, 
+      .about-snapshot-content, 
+      .google-reviews-header-card, 
+      .materials-strip-inner,
+      .cost-wizard-card,
+      .contact-card,
+      .article-card
+    `);
+
+    autoElements.forEach((el, index) => {
+      if (!el.hasAttribute('data-reveal')) {
+        el.setAttribute('data-reveal', 'fade-up');
+        const delay = (index % 4) + 1;
+        el.setAttribute('data-reveal-delay', delay.toString());
+      }
+    });
+
+    const revealTargets = document.querySelectorAll('[data-reveal]:not(.is-revealed)');
+
+    this.scrollObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      threshold: 0.1,
+      rootMargin: '0px 0px -25px 0px'
+    });
+
+    revealTargets.forEach(el => {
+      this.scrollObserver.observe(el);
+    });
   }
 
   handleRouting() {
@@ -150,6 +226,11 @@ class ARCApp {
         this.renderHome();
         break;
     }
+
+    // Trigger scroll-reveal animations for all visible and newly rendered components
+    setTimeout(() => {
+      this.initScrollReveal();
+    }, 60);
   }
 
   /* ==========================================================================
@@ -228,7 +309,7 @@ class ARCApp {
             </div>
 
             <h1 class="hero-title-serif">
-              Luxury Interior Designers &amp;<br>
+              <span class="title-italic-gold">Luxury</span> Interior Designers &amp;<br>
               <span class="title-line-nowrap">Builders In Cuddalore</span>
             </h1>
 

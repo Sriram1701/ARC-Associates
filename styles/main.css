@@ -4054,4 +4054,122 @@ div.desktop-hero-only {
   }
 }
 
+/* ==========================================================================
+   TOP READING SCROLL PROGRESS BAR
+   ========================================================================== */
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3.5px;
+  background: linear-gradient(90deg, #d4af37 0%, #fef08a 50%, #f59e0b 100%);
+  box-shadow: 0 0 14px rgba(251, 191, 36, 0.8), 0 0 4px rgba(212, 175, 55, 0.9);
+  z-index: 99999;
+  transition: width 0.12s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   SCROLL REVEAL ANIMATION ENGINE (PAGE-BY-PAGE SMOOTH REVEAL)
+   ========================================================================== */
+[data-reveal] {
+  opacity: 0;
+  will-change: transform, opacity;
+  transition-property: transform, opacity;
+  transition-duration: 0.85s;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-reveal="fade-up"] {
+  transform: translateY(36px);
+}
+
+[data-reveal="fade-down"] {
+  transform: translateY(-36px);
+}
+
+[data-reveal="fade-left"] {
+  transform: translateX(-36px);
+}
+
+[data-reveal="fade-right"] {
+  transform: translateX(36px);
+}
+
+[data-reveal="zoom-in"] {
+  transform: scale(0.92);
+}
+
+[data-reveal].is-revealed {
+  opacity: 1 !important;
+  transform: translate(0, 0) scale(1) !important;
+}
+
+/* Staggered Cascade Delays for Grid Items & Card Groups */
+[data-reveal-delay="1"] { transition-delay: 0.1s; }
+[data-reveal-delay="2"] { transition-delay: 0.2s; }
+[data-reveal-delay="3"] { transition-delay: 0.3s; }
+[data-reveal-delay="4"] { transition-delay: 0.4s; }
+[data-reveal-delay="5"] { transition-delay: 0.5s; }
+[data-reveal-delay="6"] { transition-delay: 0.6s; }
+
+/* ==========================================================================
+   ULTRA-LUXURY HIGH-CLASS STYLING POLISH
+   ========================================================================== */
+.title-italic-gold {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-weight: 700;
+  background: linear-gradient(135deg, #fef08a 0%, #fbbf24 45%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  padding-right: 6px;
+  text-shadow: none;
+  filter: drop-shadow(0 2px 8px rgba(245, 158, 11, 0.35));
+}
+
+.luxury-gold-border {
+  border: 1px solid rgba(212, 175, 55, 0.35) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08), 0 0 1px rgba(212, 175, 55, 0.25);
+}
+
+.service-modern-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1.5px;
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.45), transparent 45%, rgba(212, 175, 55, 0.25));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0.65;
+  transition: opacity 0.35s ease;
+}
+
+.service-modern-card:hover::after {
+  opacity: 1;
+  background: linear-gradient(135deg, #fef08a, #fbbf24 50%, #d97706);
+}
+
+.brand-trust-label-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  color: var(--gold-dark);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+
 
