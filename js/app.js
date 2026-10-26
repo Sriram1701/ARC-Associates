@@ -414,219 +414,8 @@ class ARCApp {
         </div>
       </section>
 
-      <!-- MATERIALS & HARDWARE WE USE (BRAND TRUST MARQUEE) -->
-      <section class="materials-strip-section">
-        <div class="container">
-          <div class="materials-strip-inner">
-            <div class="materials-strip-label">
-              <i class="fas fa-certificate" style="color: var(--gold-dark); font-size: 0.95rem;"></i>
-              PREMIUM MATERIALS &amp; CERTIFIED HARDWARE WE USE
-            </div>
-            <div class="materials-marquee-container">
-              <div class="materials-marquee-track">
-                <!-- Group 1 -->
-                <span class="brand-logo-pill" title="CenturyPly">
-                  <svg viewBox="0 0 140 32" xmlns="http://www.w3.org/2000/svg">
-                    <polygon points="14,3 17,11 25,11 19,16 21,24 14,19 7,24 9,16 3,11 11,11" fill="#e2231a"/>
-                    <text x="32" y="22" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="15" fill="#e2231a" letter-spacing="-0.5">CENTURYPLY</text>
-                  </svg>
-                </span>
-
-                <span class="brand-logo-pill" title="Merino Laminates">
-                  <svg viewBox="0 0 110 32" xmlns="http://www.w3.org/2000/svg">
-                    <ellipse cx="55" cy="16" rx="52" ry="14" fill="none" stroke="#bd1e24" stroke-width="2"/>
-                    <text x="55" y="21" font-family="'Times New Roman', serif" font-weight="bold" font-style="italic" font-size="16" fill="#bd1e24" text-anchor="middle">merino</text>
-                  </svg>
-                </span>
-
-                <span class="brand-logo-pill" title="Franke Kitchen Systems">
-                  <svg viewBox="0 0 110 30" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="110" height="30" rx="3" fill="#e30613"/>
-                    <text x="55" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="15" fill="#ffffff" letter-spacing="3" text-anchor="middle">FRANKE</text>
-                  </svg>
-                </span>
-
-                <span class="brand-logo-pill" title="Jaquar Bath Fittings">
-                  <svg viewBox="0 0 125 32" xmlns="http://www.w3.org/2000/svg">
-                    <text x="5" y="20" font-family="Arial, sans-serif" font-weight="900" font-style="italic" font-size="20" fill="#006b77" letter-spacing="-0.5">jaquar</text>
-                    <text x="76" y="28" font-family="Arial, sans-serif" font-weight="700" font-size="7" fill="#222" letter-spacing="1">BATHROOM</text>
-                  </svg>
-                </span>
-
-                <span class="brand-logo-pill" title="Blum Austria">
-                  <svg viewBox="0 0 95 30" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="95" height="30" rx="4" fill="#f36f21"/>
-                    <text x="47" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-style="italic" font-size="18" fill="#ffffff" text-anchor="middle">blum</text>
-                  </svg>
-                </span>
-
-                <span class="brand-logo-pill" title="Hettich Hardware">
-                  <svg viewBox="0 0 115 32" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="78" y1="5" x2="105" y2="5" stroke="#005b94" stroke-width="2"/>
-                    <line x1="80" y1="8" x2="105" y2="8" stroke="#40b4e5" stroke-width="2"/>
-                    <line x1="82" y1="11" x2="105" y2="11" stroke="#ffcc00" stroke-width="2"/>
-                    <line x1="84" y1="14" x2="105" y2="14" stroke="#e30613" stroke-width="2"/>
-                    <text x="5" y="24" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="18" fill="#000000" letter-spacing="-0.5">Hettich</text>
-                  </svg>
-                </span>
-
-                <span class="brand-logo-pill" title="Häfele Germany">
-                  <svg viewBox="0 0 110 32" xmlns="http://www.w3.org/2000/svg">
-                    <text x="5" y="23" font-family="Arial, sans-serif" font-weight="900" font-size="18" fill="#707173" letter-spacing="1">H</text>
-                    <circle cx="28" cy="8" r="1.5" fill="#e30613"/>
-                    <circle cx="34" cy="8" r="1.5" fill="#e30613"/>
-                    <text x="23" y="23" font-family="Arial, sans-serif" font-weight="900" font-size="18" fill="#707173" letter-spacing="1">ÄFELE</text>
-                  </svg>
-                </span>
-
-                <span class="brand-logo-pill" title="Ebco Hardware">
-                  <svg viewBox="0 0 85 30" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="85" height="30" rx="4" fill="#003366"/>
-                    <ellipse cx="42" cy="15" rx="35" ry="11" fill="none" stroke="#ffffff" stroke-width="1.2"/>
-                    <text x="42" y="19" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="13" fill="#ffffff" text-anchor="middle">ebco</text>
-                  </svg>
-                </span>
-
-                <span class="brand-logo-pill" title="Asian Paints">
-                  <svg viewBox="0 0 135 32" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="14" cy="16" r="10" fill="#e41b23"/>
-                    <path d="M10 16 Q14 8 18 16" fill="none" stroke="#ffed00" stroke-width="3"/>
-                    <text x="32" y="22" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="14" fill="#333333">asianpaints</text>
-                  </svg>
-                </span>
-
-                <span class="brand-logo-pill" title="Saint-Gobain Glass">
-                  <svg viewBox="0 0 145 32" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 22 Q17 6 30 22" fill="none" stroke="#005596" stroke-width="3"/>
-                    <path d="M9 22 Q17 11 26 22" fill="none" stroke="#009ee0" stroke-width="2"/>
-                    <text x="36" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="12" fill="#005596" letter-spacing="0.5">SAINT-GOBAIN</text>
-                  </svg>
-                </span>
-
-                <span class="brand-logo-pill" title="Kohler Luxury Sanitaryware">
-                  <svg viewBox="0 0 110 32" xmlns="http://www.w3.org/2000/svg">
-                    <text x="55" y="23" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="17" fill="#111111" letter-spacing="3" text-anchor="middle">KOHLER</text>
-                  </svg>
-                </span>
-
-                <span class="brand-logo-pill" title="Tata Tiscon Fe550D Steel">
-                  <svg viewBox="0 0 135 32" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="135" height="32" rx="4" fill="#004b87"/>
-                    <text x="67" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="13" fill="#ffffff" letter-spacing="1" text-anchor="middle">TATA TISCON</text>
-                  </svg>
-                </span>
-
-                <span class="brand-logo-pill" title="UltraTech Cement">
-                  <svg viewBox="0 0 130 32" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="130" height="32" rx="4" fill="#ffcb05"/>
-                    <text x="65" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="13" fill="#231f20" letter-spacing="0.5" text-anchor="middle">UltraTech</text>
-                  </svg>
-                </span>
-
-                <!-- Group 2 (Exact Duplicate for Infinite Loop) -->
-                <span class="brand-logo-pill" title="CenturyPly">
-                  <svg viewBox="0 0 140 32" xmlns="http://www.w3.org/2000/svg">
-                    <polygon points="14,3 17,11 25,11 19,16 21,24 14,19 7,24 9,16 3,11 11,11" fill="#e2231a"/>
-                    <text x="32" y="22" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="15" fill="#e2231a" letter-spacing="-0.5">CENTURYPLY</text>
-                  </svg>
-                </span>
-
-                <span class="brand-logo-pill" title="Merino Laminates">
-                  <svg viewBox="0 0 110 32" xmlns="http://www.w3.org/2000/svg">
-                    <ellipse cx="55" cy="16" rx="52" ry="14" fill="none" stroke="#bd1e24" stroke-width="2"/>
-                    <text x="55" y="21" font-family="'Times New Roman', serif" font-weight="bold" font-style="italic" font-size="16" fill="#bd1e24" text-anchor="middle">merino</text>
-                  </svg>
-                </span>
-
-                <span class="brand-logo-pill" title="Franke Kitchen Systems">
-                  <svg viewBox="0 0 110 30" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="110" height="30" rx="3" fill="#e30613"/>
-                    <text x="55" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="15" fill="#ffffff" letter-spacing="3" text-anchor="middle">FRANKE</text>
-                  </svg>
-                </span>
-
-                <span class="brand-logo-pill" title="Jaquar Bath Fittings">
-                  <svg viewBox="0 0 125 32" xmlns="http://www.w3.org/2000/svg">
-                    <text x="5" y="20" font-family="Arial, sans-serif" font-weight="900" font-style="italic" font-size="20" fill="#006b77" letter-spacing="-0.5">jaquar</text>
-                    <text x="76" y="28" font-family="Arial, sans-serif" font-weight="700" font-size="7" fill="#222" letter-spacing="1">BATHROOM</text>
-                  </svg>
-                </span>
-
-                <span class="brand-logo-pill" title="Blum Austria">
-                  <svg viewBox="0 0 95 30" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="95" height="30" rx="4" fill="#f36f21"/>
-                    <text x="47" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-style="italic" font-size="18" fill="#ffffff" text-anchor="middle">blum</text>
-                  </svg>
-                </span>
-
-                <span class="brand-logo-pill" title="Hettich Hardware">
-                  <svg viewBox="0 0 115 32" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="78" y1="5" x2="105" y2="5" stroke="#005b94" stroke-width="2"/>
-                    <line x1="80" y1="8" x2="105" y2="8" stroke="#40b4e5" stroke-width="2"/>
-                    <line x1="82" y1="11" x2="105" y2="11" stroke="#ffcc00" stroke-width="2"/>
-                    <line x1="84" y1="14" x2="105" y2="14" stroke="#e30613" stroke-width="2"/>
-                    <text x="5" y="24" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="18" fill="#000000" letter-spacing="-0.5">Hettich</text>
-                  </svg>
-                </span>
-
-                <span class="brand-logo-pill" title="Häfele Germany">
-                  <svg viewBox="0 0 110 32" xmlns="http://www.w3.org/2000/svg">
-                    <text x="5" y="23" font-family="Arial, sans-serif" font-weight="900" font-size="18" fill="#707173" letter-spacing="1">H</text>
-                    <circle cx="28" cy="8" r="1.5" fill="#e30613"/>
-                    <circle cx="34" cy="8" r="1.5" fill="#e30613"/>
-                    <text x="23" y="23" font-family="Arial, sans-serif" font-weight="900" font-size="18" fill="#707173" letter-spacing="1">ÄFELE</text>
-                  </svg>
-                </span>
-
-                <span class="brand-logo-pill" title="Ebco Hardware">
-                  <svg viewBox="0 0 85 30" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="85" height="30" rx="4" fill="#003366"/>
-                    <ellipse cx="42" cy="15" rx="35" ry="11" fill="none" stroke="#ffffff" stroke-width="1.2"/>
-                    <text x="42" y="19" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="13" fill="#ffffff" text-anchor="middle">ebco</text>
-                  </svg>
-                </span>
-
-                <span class="brand-logo-pill" title="Asian Paints">
-                  <svg viewBox="0 0 135 32" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="14" cy="16" r="10" fill="#e41b23"/>
-                    <path d="M10 16 Q14 8 18 16" fill="none" stroke="#ffed00" stroke-width="3"/>
-                    <text x="32" y="22" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="14" fill="#333333">asianpaints</text>
-                  </svg>
-                </span>
-
-                <span class="brand-logo-pill" title="Saint-Gobain Glass">
-                  <svg viewBox="0 0 145 32" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 22 Q17 6 30 22" fill="none" stroke="#005596" stroke-width="3"/>
-                    <path d="M9 22 Q17 11 26 22" fill="none" stroke="#009ee0" stroke-width="2"/>
-                    <text x="36" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="12" fill="#005596" letter-spacing="0.5">SAINT-GOBAIN</text>
-                  </svg>
-                </span>
-
-                <span class="brand-logo-pill" title="Kohler Luxury Sanitaryware">
-                  <svg viewBox="0 0 110 32" xmlns="http://www.w3.org/2000/svg">
-                    <text x="55" y="23" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="17" fill="#111111" letter-spacing="3" text-anchor="middle">KOHLER</text>
-                  </svg>
-                </span>
-
-                <span class="brand-logo-pill" title="Tata Tiscon Fe550D Steel">
-                  <svg viewBox="0 0 135 32" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="135" height="32" rx="4" fill="#004b87"/>
-                    <text x="67" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="13" fill="#ffffff" letter-spacing="1" text-anchor="middle">TATA TISCON</text>
-                  </svg>
-                </span>
-
-                <span class="brand-logo-pill" title="UltraTech Cement">
-                  <svg viewBox="0 0 130 32" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="130" height="32" rx="4" fill="#ffcb05"/>
-                    <text x="65" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="13" fill="#231f20" letter-spacing="0.5" text-anchor="middle">UltraTech</text>
-                  </svg>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <!-- MATERIALS & HARDWARE WE USE (TOP RUNNING MARQUEE) -->
+      \n
       <!-- Services Section (Matching Reference Style: Dark Gradient Overlay Cards) -->
       <section class="section">
         <div class="container">
@@ -957,6 +746,9 @@ class ARCApp {
           </div>
         </div>
       </section>
+
+      <!-- BOTTOM RUNNING MATERIALS & CERTIFIED HARDWARE MARQUEE -->
+      ${this.generateMaterialsMarqueeHtml('PREMIUM MATERIALS &amp; CERTIFIED HARDWARE WE USE')}
     `;
 
     this.initCoverflow();
@@ -1880,6 +1672,225 @@ class ARCApp {
     });
 
     calculate();
+  }
+
+  /* ==========================================================================
+     MATERIALS & HARDWARE RUNNING MARQUEE GENERATOR
+     ========================================================================== */
+  generateMaterialsMarqueeHtml(customTitle = 'PREMIUM MATERIALS &amp; CERTIFIED HARDWARE WE USE') {
+    return `
+      <section class="materials-strip-section" data-reveal="fade-up">
+        <div class="container">
+          <div class="materials-strip-inner">
+            <div class="materials-strip-label">
+              <i class="fas fa-certificate" style="color: var(--gold-dark); font-size: 0.95rem;"></i>
+              ${customTitle}
+            </div>
+            <div class="materials-marquee-container">
+              <div class="materials-marquee-track">
+                <!-- Group 1 -->
+                <span class="brand-logo-pill" title="CenturyPly">
+                  <svg viewBox="0 0 140 32" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="14,3 17,11 25,11 19,16 21,24 14,19 7,24 9,16 3,11 11,11" fill="#e2231a"/>
+                    <text x="32" y="22" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="15" fill="#e2231a" letter-spacing="-0.5">CENTURYPLY</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Merino Laminates">
+                  <svg viewBox="0 0 110 32" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="55" cy="16" rx="52" ry="14" fill="none" stroke="#bd1e24" stroke-width="2"/>
+                    <text x="55" y="21" font-family="'Times New Roman', serif" font-weight="bold" font-style="italic" font-size="16" fill="#bd1e24" text-anchor="middle">merino</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Franke Kitchen Systems">
+                  <svg viewBox="0 0 110 30" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="110" height="30" rx="3" fill="#e30613"/>
+                    <text x="55" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="15" fill="#ffffff" letter-spacing="3" text-anchor="middle">FRANKE</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Jaquar Bath Fittings">
+                  <svg viewBox="0 0 125 32" xmlns="http://www.w3.org/2000/svg">
+                    <text x="5" y="20" font-family="Arial, sans-serif" font-weight="900" font-style="italic" font-size="20" fill="#006b77" letter-spacing="-0.5">jaquar</text>
+                    <text x="76" y="28" font-family="Arial, sans-serif" font-weight="700" font-size="7" fill="#222" letter-spacing="1">BATHROOM</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Blum Austria">
+                  <svg viewBox="0 0 95 30" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="95" height="30" rx="4" fill="#f36f21"/>
+                    <text x="47" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-style="italic" font-size="18" fill="#ffffff" text-anchor="middle">blum</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Hettich Hardware">
+                  <svg viewBox="0 0 115 32" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="78" y1="5" x2="105" y2="5" stroke="#005b94" stroke-width="2"/>
+                    <line x1="80" y1="8" x2="105" y2="8" stroke="#40b4e5" stroke-width="2"/>
+                    <line x1="82" y1="11" x2="105" y2="11" stroke="#ffcc00" stroke-width="2"/>
+                    <line x1="84" y1="14" x2="105" y2="14" stroke="#e30613" stroke-width="2"/>
+                    <text x="5" y="24" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="18" fill="#000000" letter-spacing="-0.5">Hettich</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Häfele Germany">
+                  <svg viewBox="0 0 110 32" xmlns="http://www.w3.org/2000/svg">
+                    <text x="5" y="23" font-family="Arial, sans-serif" font-weight="900" font-size="18" fill="#707173" letter-spacing="1">H</text>
+                    <circle cx="28" cy="8" r="1.5" fill="#e30613"/>
+                    <circle cx="34" cy="8" r="1.5" fill="#e30613"/>
+                    <text x="23" y="23" font-family="Arial, sans-serif" font-weight="900" font-size="18" fill="#707173" letter-spacing="1">ÄFELE</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Ebco Hardware">
+                  <svg viewBox="0 0 85 30" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="85" height="30" rx="4" fill="#003366"/>
+                    <ellipse cx="42" cy="15" rx="35" ry="11" fill="none" stroke="#ffffff" stroke-width="1.2"/>
+                    <text x="42" y="19" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="13" fill="#ffffff" text-anchor="middle">ebco</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Asian Paints">
+                  <svg viewBox="0 0 135 32" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="14" cy="16" r="10" fill="#e41b23"/>
+                    <path d="M10 16 Q14 8 18 16" fill="none" stroke="#ffed00" stroke-width="3"/>
+                    <text x="32" y="22" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="14" fill="#333333">asianpaints</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Saint-Gobain Glass">
+                  <svg viewBox="0 0 145 32" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 22 Q17 6 30 22" fill="none" stroke="#005596" stroke-width="3"/>
+                    <path d="M9 22 Q17 11 26 22" fill="none" stroke="#009ee0" stroke-width="2"/>
+                    <text x="36" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="12" fill="#005596" letter-spacing="0.5">SAINT-GOBAIN</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Kohler Luxury Sanitaryware">
+                  <svg viewBox="0 0 110 32" xmlns="http://www.w3.org/2000/svg">
+                    <text x="55" y="23" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="17" fill="#111111" letter-spacing="3" text-anchor="middle">KOHLER</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Tata Tiscon Fe550D Steel">
+                  <svg viewBox="0 0 135 32" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="135" height="32" rx="4" fill="#004b87"/>
+                    <text x="67" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="13" fill="#ffffff" letter-spacing="1" text-anchor="middle">TATA TISCON</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="UltraTech Cement">
+                  <svg viewBox="0 0 130 32" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="130" height="32" rx="4" fill="#ffcb05"/>
+                    <text x="65" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="13" fill="#231f20" letter-spacing="0.5" text-anchor="middle">UltraTech</text>
+                  </svg>
+                </span>
+
+                <!-- Group 2 (Exact Duplicate for Infinite Loop) -->
+                <span class="brand-logo-pill" title="CenturyPly">
+                  <svg viewBox="0 0 140 32" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="14,3 17,11 25,11 19,16 21,24 14,19 7,24 9,16 3,11 11,11" fill="#e2231a"/>
+                    <text x="32" y="22" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="15" fill="#e2231a" letter-spacing="-0.5">CENTURYPLY</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Merino Laminates">
+                  <svg viewBox="0 0 110 32" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="55" cy="16" rx="52" ry="14" fill="none" stroke="#bd1e24" stroke-width="2"/>
+                    <text x="55" y="21" font-family="'Times New Roman', serif" font-weight="bold" font-style="italic" font-size="16" fill="#bd1e24" text-anchor="middle">merino</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Franke Kitchen Systems">
+                  <svg viewBox="0 0 110 30" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="110" height="30" rx="3" fill="#e30613"/>
+                    <text x="55" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="15" fill="#ffffff" letter-spacing="3" text-anchor="middle">FRANKE</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Jaquar Bath Fittings">
+                  <svg viewBox="0 0 125 32" xmlns="http://www.w3.org/2000/svg">
+                    <text x="5" y="20" font-family="Arial, sans-serif" font-weight="900" font-style="italic" font-size="20" fill="#006b77" letter-spacing="-0.5">jaquar</text>
+                    <text x="76" y="28" font-family="Arial, sans-serif" font-weight="700" font-size="7" fill="#222" letter-spacing="1">BATHROOM</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Blum Austria">
+                  <svg viewBox="0 0 95 30" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="95" height="30" rx="4" fill="#f36f21"/>
+                    <text x="47" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-style="italic" font-size="18" fill="#ffffff" text-anchor="middle">blum</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Hettich Hardware">
+                  <svg viewBox="0 0 115 32" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="78" y1="5" x2="105" y2="5" stroke="#005b94" stroke-width="2"/>
+                    <line x1="80" y1="8" x2="105" y2="8" stroke="#40b4e5" stroke-width="2"/>
+                    <line x1="82" y1="11" x2="105" y2="11" stroke="#ffcc00" stroke-width="2"/>
+                    <line x1="84" y1="14" x2="105" y2="14" stroke="#e30613" stroke-width="2"/>
+                    <text x="5" y="24" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="18" fill="#000000" letter-spacing="-0.5">Hettich</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Häfele Germany">
+                  <svg viewBox="0 0 110 32" xmlns="http://www.w3.org/2000/svg">
+                    <text x="5" y="23" font-family="Arial, sans-serif" font-weight="900" font-size="18" fill="#707173" letter-spacing="1">H</text>
+                    <circle cx="28" cy="8" r="1.5" fill="#e30613"/>
+                    <circle cx="34" cy="8" r="1.5" fill="#e30613"/>
+                    <text x="23" y="23" font-family="Arial, sans-serif" font-weight="900" font-size="18" fill="#707173" letter-spacing="1">ÄFELE</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Ebco Hardware">
+                  <svg viewBox="0 0 85 30" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="85" height="30" rx="4" fill="#003366"/>
+                    <ellipse cx="42" cy="15" rx="35" ry="11" fill="none" stroke="#ffffff" stroke-width="1.2"/>
+                    <text x="42" y="19" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="13" fill="#ffffff" text-anchor="middle">ebco</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Asian Paints">
+                  <svg viewBox="0 0 135 32" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="14" cy="16" r="10" fill="#e41b23"/>
+                    <path d="M10 16 Q14 8 18 16" fill="none" stroke="#ffed00" stroke-width="3"/>
+                    <text x="32" y="22" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="14" fill="#333333">asianpaints</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Saint-Gobain Glass">
+                  <svg viewBox="0 0 145 32" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 22 Q17 6 30 22" fill="none" stroke="#005596" stroke-width="3"/>
+                    <path d="M9 22 Q17 11 26 22" fill="none" stroke="#009ee0" stroke-width="2"/>
+                    <text x="36" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="12" fill="#005596" letter-spacing="0.5">SAINT-GOBAIN</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Kohler Luxury Sanitaryware">
+                  <svg viewBox="0 0 110 32" xmlns="http://www.w3.org/2000/svg">
+                    <text x="55" y="23" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="17" fill="#111111" letter-spacing="3" text-anchor="middle">KOHLER</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="Tata Tiscon Fe550D Steel">
+                  <svg viewBox="0 0 135 32" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="135" height="32" rx="4" fill="#004b87"/>
+                    <text x="67" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="13" fill="#ffffff" letter-spacing="1" text-anchor="middle">TATA TISCON</text>
+                  </svg>
+                </span>
+
+                <span class="brand-logo-pill" title="UltraTech Cement">
+                  <svg viewBox="0 0 130 32" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="130" height="32" rx="4" fill="#ffcb05"/>
+                    <text x="65" y="21" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="13" fill="#231f20" letter-spacing="0.5" text-anchor="middle">UltraTech</text>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    `;
   }
 
   /* ==========================================================================
