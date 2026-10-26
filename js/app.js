@@ -221,58 +221,113 @@ class ARCApp {
         <div class="hero-glow"></div>
 
         <div class="container hero-container">
-          <!-- Left Column: Typography, Checklist, Stats (Matching Reference) -->
+          <!-- Left Column: Typography, Checklist, Actions, Stats -->
           <div class="hero-content">
             <div class="hero-eyebrow-tag">
-              Civil Engineering &amp; Luxury Interiors • Cuddalore &amp; Tamil Nadu
+              Civil Engineering &amp; Luxury Interiors • Estd 1998
             </div>
 
             <h1 class="hero-title-serif">
-              Interior Designers &amp;<br>
+              Luxury Interior Designers &amp;<br>
               <span class="title-line-nowrap">Builders In Cuddalore</span>
             </h1>
 
-            <p class="hero-desc">
-              Complete civil construction &amp; luxury interiors for 2, 3 &amp; 4 BHK homes and villas, designed and built by one certified local team, at a fixed, itemised price.
+            <!-- Desktop Details (Hidden on mobile to keep video clean & unobstructed) -->
+            <p class="hero-desc desktop-hero-only">
+              Turnkey civil construction &amp; luxury bespoke interiors for premium 2, 3 &amp; 4 BHK homes and villas. Designed by certified architects, built with structural excellence, and delivered at a guaranteed fixed price.
             </p>
 
-            <div class="hero-checklist">
+            <div class="hero-checklist desktop-hero-only">
               <div class="hero-check-item">
                 <span class="hero-check-icon"><i class="fas fa-check"></i></span>
-                <span>Free 3D design &amp; elevation before you pay anything</span>
+                <span>Complimentary 3D elevation &amp; floor plan before you pay anything</span>
               </div>
               <div class="hero-check-item">
                 <span class="hero-check-icon"><i class="fas fa-check"></i></span>
-                <span>Itemised quote (BOQ), no hidden costs</span>
+                <span>100% itemised quote (BOQ) with zero hidden costs</span>
               </div>
               <div class="hero-check-item">
                 <span class="hero-check-icon"><i class="fas fa-check"></i></span>
-                <span>Fixed handover date • 10-year structural warranty</span>
+                <span>Guaranteed handover date • 10-year certified structural warranty</span>
               </div>
             </div>
 
-            <div class="hero-actions" style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: 4px;">
-              <a href="#cost-estimator" data-nav="cost-estimator" class="btn btn-primary" style="padding: 14px 26px; font-weight: 700; box-shadow: 0 8px 24px rgba(212, 175, 55, 0.35);">
-                <i class="fas fa-calculator"></i> Calculate Construction Cost
+            <div class="hero-actions">
+              <!-- PRIMARY HIGHLIGHTED CTA: VIBRANT WARM GOLD -->
+              <a href="#contact" data-nav="contact" class="btn btn-hero-highlight">
+                <i class="fas fa-calendar-check"></i> Book Free Consultation
               </a>
-              <a href="#contact" data-nav="contact" class="btn btn-secondary" style="padding: 14px 24px; font-weight: 700; background: rgba(255, 255, 255, 0.12); backdrop-filter: blur(8px); border-color: rgba(255, 255, 255, 0.35); color: #ffffff;">
-                <i class="fas fa-phone-alt"></i> Book Free Consultation
+              <!-- SECONDARY CTA: EXPLORE OUR SERVICES & PROJECTS -->
+              <a href="#services" data-nav="services" class="btn btn-hero-secondary">
+                <i class="fas fa-layer-group"></i> Explore Our Services
               </a>
             </div>
 
-            <div class="hero-stats">
+            <!-- Desktop Stats Row (Hidden on mobile) -->
+            <div class="hero-stats desktop-hero-only">
               <div class="stat-item">
                 <h3 id="hero-stat-projects">580+</h3>
                 <p>Homes &amp; Villas Delivered</p>
               </div>
               <div class="stat-item">
-                <h3 id="hero-stat-years">25+ YRS</h3>
-                <p>In Cuddalore &amp; Tamil Nadu</p>
+                <h3 id="hero-stat-years">26+ Yrs</h3>
+                <p>Heritage Since 1998</p>
               </div>
               <div class="stat-item">
-                <h3 id="hero-stat-warranty">10 YRS</h3>
+                <h3 id="hero-stat-warranty">10 Yrs</h3>
                 <p>Structural Warranty</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MOBILE HERO DETAILS SECTION (Only visible on mobile screens, directly below video) -->
+      <section class="hero-mobile-details-section mobile-hero-only">
+        <div class="container">
+          <!-- 3 Stats in clean mobile cards -->
+          <div class="hero-mobile-stats-grid">
+            <div class="mobile-stat-card">
+              <div class="mobile-stat-icon"><i class="fas fa-home"></i></div>
+              <div class="mobile-stat-info">
+                <h3 id="hero-stat-projects-mob">580+</h3>
+                <p>Homes Delivered</p>
+              </div>
+            </div>
+            <div class="mobile-stat-card">
+              <div class="mobile-stat-icon"><i class="fas fa-award"></i></div>
+              <div class="mobile-stat-info">
+                <h3 id="hero-stat-years-mob">26+ Yrs</h3>
+                <p>Heritage 1998</p>
+              </div>
+            </div>
+            <div class="mobile-stat-card">
+              <div class="mobile-stat-icon"><i class="fas fa-shield-halved"></i></div>
+              <div class="mobile-stat-info">
+                <h3 id="hero-stat-warranty-mob">10 Yrs</h3>
+                <p>Warranty</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <p class="hero-mobile-desc">
+            Turnkey civil construction &amp; luxury bespoke interiors for premium 2, 3 &amp; 4 BHK homes and villas. Designed by certified architects, built with structural excellence, and delivered at a guaranteed fixed price.
+          </p>
+
+          <!-- Checklist -->
+          <div class="hero-mobile-checklist">
+            <div class="hero-check-item">
+              <span class="hero-check-icon"><i class="fas fa-check"></i></span>
+              <span>Complimentary 3D elevation &amp; floor plan before you pay anything</span>
+            </div>
+            <div class="hero-check-item">
+              <span class="hero-check-icon"><i class="fas fa-check"></i></span>
+              <span>100% itemised quote (BOQ) with zero hidden costs</span>
+            </div>
+            <div class="hero-check-item">
+              <span class="hero-check-icon"><i class="fas fa-check"></i></span>
+              <span>Guaranteed handover date • 10-year certified structural warranty</span>
             </div>
           </div>
         </div>
@@ -284,7 +339,7 @@ class ARCApp {
           <div class="materials-strip-inner">
             <div class="materials-strip-label">
               <i class="fas fa-certificate" style="color: var(--gold-dark); font-size: 0.95rem;"></i>
-              MATERIALS &amp; HARDWARE WE USE
+              PREMIUM MATERIALS &amp; CERTIFIED HARDWARE WE USE
             </div>
             <div class="materials-marquee-container">
               <div class="materials-marquee-track">
@@ -495,10 +550,10 @@ class ARCApp {
       <section class="section">
         <div class="container">
           <div class="section-header">
-            <div class="badge badge-gold" style="margin: 0 auto 8px;">What We Build</div>
-            <h2 class="section-title">Our Services</h2>
+            <div class="badge badge-gold" style="margin: 0 auto 8px;">What We Build &amp; Design</div>
+            <h2 class="section-title">Architectural &amp; Construction Services</h2>
             <p class="section-subtitle">
-              Complete turnkey civil engineering, bespoke interior design, and modern construction solutions in Cuddalore.
+              From foundation to bespoke interior finishes — complete turnkey civil construction, modular living, and precision remodeling across Cuddalore and Tamil Nadu.
             </p>
           </div>
 
@@ -509,7 +564,7 @@ class ARCApp {
               <div class="service-modern-card-overlay">
                 <div class="service-card-meta">
                   <span class="service-card-num">01</span>
-                  <span class="service-card-tagline">Flagship Specialty • Turnkey Living</span>
+                  <span class="service-card-tagline">Flagship Specialty • Turnkey Luxury Living</span>
                 </div>
                 <h3 class="service-modern-card-title" style="font-size: 1.75rem;">Home &amp; Villa Interiors</h3>
                 <div class="service-card-action">
@@ -524,9 +579,9 @@ class ARCApp {
               <div class="service-modern-card-overlay">
                 <div class="service-card-meta">
                   <span class="service-card-num">02</span>
-                  <span class="service-card-tagline">Civil &amp; Structural</span>
+                  <span class="service-card-tagline">Structural &amp; Turnkey Engineering</span>
                 </div>
-                <h3 class="service-modern-card-title">Construction Services</h3>
+                <h3 class="service-modern-card-title">Turnkey Civil Construction</h3>
                 <div class="service-card-action">
                   <span>Explore Projects</span>
                   <i class="fas fa-arrow-right"></i>
@@ -539,9 +594,9 @@ class ARCApp {
               <div class="service-modern-card-overlay">
                 <div class="service-card-meta">
                   <span class="service-card-num">03</span>
-                  <span class="service-card-tagline">Bespoke Cabinetry</span>
+                  <span class="service-card-tagline">German Hardware &amp; Waterproof Plywood</span>
                 </div>
-                <h3 class="service-modern-card-title">Modular Kitchen</h3>
+                <h3 class="service-modern-card-title">Bespoke Modular Kitchens</h3>
                 <div class="service-card-action">
                   <span>Explore Designs</span>
                   <i class="fas fa-arrow-right"></i>
@@ -554,9 +609,9 @@ class ARCApp {
               <div class="service-modern-card-overlay">
                 <div class="service-card-meta">
                   <span class="service-card-num">04</span>
-                  <span class="service-card-tagline">Corporate Workspaces</span>
+                  <span class="service-card-tagline">Modern Corporate Workspaces</span>
                 </div>
-                <h3 class="service-modern-card-title">Office Interiors</h3>
+                <h3 class="service-modern-card-title">Corporate &amp; Office Interiors</h3>
                 <div class="service-card-action">
                   <span>Explore Office</span>
                   <i class="fas fa-arrow-right"></i>
@@ -569,9 +624,9 @@ class ARCApp {
               <div class="service-modern-card-overlay">
                 <div class="service-card-meta">
                   <span class="service-card-num">05</span>
-                  <span class="service-card-tagline">Retail &amp; Showrooms</span>
+                  <span class="service-card-tagline">High-Traffic Retail &amp; Showrooms</span>
                 </div>
-                <h3 class="service-modern-card-title">Commercial Interiors</h3>
+                <h3 class="service-modern-card-title">Commercial Architecture &amp; Interiors</h3>
                 <div class="service-card-action">
                   <span>Explore Commercial</span>
                   <i class="fas fa-arrow-right"></i>
@@ -584,9 +639,9 @@ class ARCApp {
               <div class="service-modern-card-overlay">
                 <div class="service-card-meta">
                   <span class="service-card-num">06</span>
-                  <span class="service-card-tagline">Restoration &amp; Remodeling</span>
+                  <span class="service-card-tagline">Structural Strengthening &amp; Remodeling</span>
                 </div>
-                <h3 class="service-modern-card-title">Renovation Services</h3>
+                <h3 class="service-modern-card-title">Home &amp; Villa Renovations</h3>
                 <div class="service-card-action">
                   <span>Explore Renovations</span>
                   <i class="fas fa-arrow-right"></i>
@@ -599,9 +654,9 @@ class ARCApp {
               <div class="service-modern-card-overlay">
                 <div class="service-card-meta">
                   <span class="service-card-num">07</span>
-                  <span class="service-card-tagline">Architectural Ambiance</span>
+                  <span class="service-card-tagline">Acoustic Gypsum &amp; Ambient LED Profiles</span>
                 </div>
-                <h3 class="service-modern-card-title">False Ceiling &amp; Lighting</h3>
+                <h3 class="service-modern-card-title">Architectural Ceilings &amp; Lighting</h3>
                 <div class="service-card-action">
                   <span>Explore Lighting</span>
                   <i class="fas fa-arrow-right"></i>
@@ -618,15 +673,15 @@ class ARCApp {
           <div class="why-choose-grid">
             <!-- Left Column: Title, Intro & CTA -->
             <div class="why-choose-left">
-              <div class="why-choose-eyebrow">WHY ARC ASSOCIATES</div>
+              <div class="why-choose-eyebrow">THE ARC ADVANTAGE</div>
               <h2 class="why-choose-heading">
-                Why Cuddalore<br>Homeowners Choose<br>Us
+                Why Homeowners in<br>Cuddalore Choose<br>ARC Associates
               </h2>
               <p class="why-choose-desc">
-                One team designs, manufactures and installs your interiors. You get a fixed price, a fixed date and a finish that matches the 3D design.
+                We eliminate the stress of dealing with multiple contractors. One dedicated in-house team of licensed engineers, architects, and master craftsmen designs, builds, and finishes your home — on time and within your exact budget.
               </p>
               <a href="#contact" data-nav="contact" class="why-choose-cta-btn">
-                Book a free studio visit
+                Schedule Studio Visit &amp; 3D Walkthrough
               </a>
             </div>
 
@@ -640,9 +695,9 @@ class ARCApp {
                   </div>
                   <div class="why-card-number">01</div>
                 </div>
-                <h3 class="why-card-title">Itemised quote</h3>
+                <h3 class="why-card-title">Transparent Itemised BOQ</h3>
                 <p class="why-card-desc">
-                  Every cabinet, finish and fitting priced line by line. The price you sign is the price you pay.
+                  Every brick, cabinet ply, and fitting is priced line-by-line before work begins. The price you sign is the exact price you pay — zero hidden charges.
                 </p>
               </div>
 
@@ -654,9 +709,9 @@ class ARCApp {
                   </div>
                   <div class="why-card-number">02</div>
                 </div>
-                <h3 class="why-card-title">Fixed handover date</h3>
+                <h3 class="why-card-title">Guaranteed Handover Date</h3>
                 <p class="why-card-desc">
-                  Your move-in date is written into the contract, with a dedicated project manager.
+                  Your move-in date is written into the contract, tracked via structured milestones and supervised daily by a dedicated site engineer.
                 </p>
               </div>
 
@@ -668,9 +723,9 @@ class ARCApp {
                   </div>
                   <div class="why-card-number">03</div>
                 </div>
-                <h3 class="why-card-title">In-house craftsmen</h3>
+                <h3 class="why-card-title">In-House Master Craftsmen</h3>
                 <p class="why-card-desc">
-                  Our own designers and carpenters, not subcontractors, so the finish matches the 3D design.
+                  Zero third-party subcontractors. Our permanent team of certified designers, carpenters, and civil engineers ensures the reality matches the 3D design.
                 </p>
               </div>
 
@@ -682,9 +737,9 @@ class ARCApp {
                   </div>
                   <div class="why-card-number">04</div>
                 </div>
-                <h3 class="why-card-title">Visit our studio</h3>
+                <h3 class="why-card-title">Experience Center &amp; Studio</h3>
                 <p class="why-card-desc">
-                  See and touch materials at #23/33 K.K. Nagar, near Vannarapalayam, Cuddalore.
+                  Touch and compare authentic CenturyPly woods, Merino laminates, and German hardware at #23/33 K.K. Nagar, Vannarapalayam, Cuddalore.
                 </p>
               </div>
             </div>
@@ -697,19 +752,19 @@ class ARCApp {
         <div class="container">
           <div class="about-snapshot-grid">
             <div class="about-snapshot-content">
-              <div class="badge badge-gold about-badge-center">About ARC Associates</div>
+              <div class="badge badge-gold about-badge-center">Legacy Of Excellence</div>
               <h2 class="about-main-heading">Building Strong Foundations<br>For Over Two Decades</h2>
               <p>
-                ARC Associates was established in 1998 in Cuddalore with a mission to bring high-grade structural engineering, transparent pricing, and aesthetic architectural innovation to Tamil Nadu. 
+                Established in 1998 in Cuddalore, ARC Associates brings together rigorous civil engineering standards, transparent pricing, and timeless architectural aesthetics across Tamil Nadu.
               </p>
               <p>
-                Promoted by experienced civil engineers and architects, we operate specialized divisions in Turnkey Civil Construction, Architectural & 3D Spatial Planning, Commercial Infrastructure, and High-End Interior Renovations.
+                Led by Er. A. Ramanathan and our certified team of civil engineers and architects, we specialize in Turnkey Civil Construction, Vastu-Compliant 3D Spatial Planning, Commercial Infrastructure, and Luxury Interior Renovations.
               </p>
               <div class="values-checklist">
-                <div class="value-check-item"><i class="fas fa-check"></i> DTCP & Corporation Approvals</div>
-                <div class="value-check-item"><i class="fas fa-check"></i> Fe550D Branded Steel & OPC Cement</div>
-                <div class="value-check-item"><i class="fas fa-check"></i> Vastu-Compliant 3D Elevations</div>
-                <div class="value-check-item"><i class="fas fa-check"></i> 10-Year Waterproofing Warranty</div>
+                <div class="value-check-item"><i class="fas fa-check"></i> DTCP &amp; Corporation Approvals Handled End-to-End</div>
+                <div class="value-check-item"><i class="fas fa-check"></i> Tata Tiscon Fe550D Steel &amp; UltraTech Cement</div>
+                <div class="value-check-item"><i class="fas fa-check"></i> 100% Vastu-Compliant 3D Elevations &amp; Floor Plans</div>
+                <div class="value-check-item"><i class="fas fa-check"></i> 10-Year Certified Waterproofing &amp; Structural Warranty</div>
               </div>
               <a href="#about" data-nav="about" class="btn btn-primary">
                 Read Full Company History <i class="fas fa-arrow-right"></i>
@@ -731,8 +786,8 @@ class ARCApp {
       <section class="section coverflow-section">
         <div class="container">
           <div class="section-header">
-            <h2 class="section-title" style="font-size: 2.4rem;">Our Projects</h2>
-            <p class="section-subtitle">Explore our interior design, civil engineering & construction works</p>
+            <h2 class="section-title" style="font-size: 2.4rem;">Featured Project Realizations</h2>
+            <p class="section-subtitle">Explore our custom luxury villas, turnkey residences &amp; commercial landmarks across Cuddalore</p>
           </div>
 
           <!-- Category Filter Pills -->
@@ -765,7 +820,7 @@ class ARCApp {
 
           <div style="text-align: center; margin-top: 28px;">
             <a href="#projects" data-nav="projects" class="btn btn-secondary">
-              View Our Gallery <i class="fas fa-arrow-right"></i>
+              Explore Full Portfolio <i class="fas fa-arrow-right"></i>
             </a>
           </div>
         </div>
@@ -784,12 +839,12 @@ class ARCApp {
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                   </div>
                 </div>
-                <p class="google-score-sub">Over 140+ Verified Google Reviews across Cuddalore</p>
+                <p class="google-score-sub">Backed by 140+ Verified Homeowners &amp; Commercial Clients across Cuddalore &amp; Tamil Nadu</p>
               </div>
             </div>
             <div class="google-header-actions">
               <a href="#reviews" data-nav="reviews" class="btn btn-sm btn-primary">
-                <i class="fas fa-pen"></i> Write / View All
+                <i class="fas fa-pen"></i> Read All Verified Reviews
               </a>
             </div>
           </div>
@@ -806,14 +861,14 @@ class ARCApp {
       <!-- Quick Estimation CTA Banner -->
       <section class="section" style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: #ffffff;">
         <div class="container" style="text-align: center; max-width: 800px;">
-          <div class="badge badge-gold" style="margin-bottom: 12px;">Instant Estimation</div>
-          <h2 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 16px;">Planning to Build Your Dream Home in Cuddalore?</h2>
+          <div class="badge badge-gold" style="margin-bottom: 12px;">Instant Construction Estimator</div>
+          <h2 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 16px;">Planning to Build or Renovate in Cuddalore?</h2>
           <p style="color: var(--text-light); font-size: 1.05rem; line-height: 1.7; margin-bottom: 28px;">
-            Get an instant, itemized building cost estimate based on your square footage, soil condition, and preferred finish tier.
+            Get a precise, itemized construction and luxury interior cost estimate in under 60 seconds — tailored to your exact plot size, soil condition, and preferred finish tier.
           </p>
           <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
             <a href="#cost-estimator" data-nav="cost-estimator" class="btn btn-gold">
-              <i class="fas fa-calculator"></i> Launch Cost Calculator
+              <i class="fas fa-calculator"></i> Launch Cost Calculator (BOQ)
             </a>
             <a href="https://wa.me/919382312700?text=Hello%20ARC%20Associates,%20I%20would%20like%20to%20discuss%20a%20construction%20project." target="_blank" class="btn btn-outline-light">
               <i class="fab fa-whatsapp"></i> Chat on WhatsApp
@@ -1568,9 +1623,12 @@ class ARCApp {
 
   animateHeroCounters() {
     const counters = [
-      { id: 'hero-stat-years', target: 25, suffix: '+' },
       { id: 'hero-stat-projects', target: 580, suffix: '+' },
-      { id: 'hero-stat-clients', target: 100, suffix: '%' }
+      { id: 'hero-stat-years', target: 26, suffix: '+ Yrs' },
+      { id: 'hero-stat-warranty', target: 10, suffix: ' Yrs' },
+      { id: 'hero-stat-projects-mob', target: 580, suffix: '+' },
+      { id: 'hero-stat-years-mob', target: 26, suffix: '+ Yrs' },
+      { id: 'hero-stat-warranty-mob', target: 10, suffix: ' Yrs' }
     ];
 
     counters.forEach(item => {
