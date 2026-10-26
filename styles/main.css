@@ -3778,10 +3778,12 @@ div.desktop-hero-only {
    WHY CHOOSE US SECTION (MATCHING REFERENCE LUXURY STUDIO DESIGN)
    ========================================================================== */
 .why-choose-section {
-  background-color: #f5efe6;
-  padding: 100px 0;
+  background-color: var(--bg-surface);
+  padding: 95px 0;
   position: relative;
   overflow: hidden;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .why-choose-grid {
@@ -3798,30 +3800,30 @@ div.desktop-hero-only {
 }
 
 .why-choose-eyebrow {
-  font-size: 0.84rem;
-  font-weight: 700;
+  font-size: 0.82rem;
+  font-weight: 800;
   letter-spacing: 2.8px;
   text-transform: uppercase;
-  color: #8c735d;
-  margin-bottom: 20px;
+  color: var(--gold-dark);
+  margin-bottom: 18px;
 }
 
 .why-choose-heading {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: clamp(2.3rem, 3.6vw, 3.4rem);
+  font-size: clamp(2.3rem, 3.6vw, 3.3rem);
   font-weight: 800;
-  line-height: 1.15;
-  color: #1e1814;
+  line-height: 1.18;
+  color: var(--primary);
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 .why-choose-desc {
   font-size: 1.05rem;
   line-height: 1.7;
-  color: #5d534b;
-  margin-bottom: 36px;
+  color: var(--text-muted);
+  margin-bottom: 34px;
   max-width: 480px;
 }
 
@@ -3830,22 +3832,23 @@ div.desktop-hero-only {
   align-items: center;
   justify-content: center;
   padding: 14px 34px;
-  border: 1.5px solid #2d241e;
+  border: 1.5px solid var(--primary);
   border-radius: 9999px;
-  color: #2d241e;
+  color: var(--primary);
   background: transparent;
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
   transition: all 0.28s cubic-bezier(0.25, 1, 0.5, 1);
   cursor: pointer;
 }
 
 .why-choose-cta-btn:hover {
-  background: #2d241e;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
   color: #ffffff;
+  border-color: var(--gold);
   transform: translateY(-2px);
-  box-shadow: 0 10px 22px rgba(45, 36, 30, 0.16);
+  box-shadow: 0 10px 24px rgba(6, 9, 17, 0.25);
 }
 
 .why-choose-cards-grid {
@@ -3858,16 +3861,17 @@ div.desktop-hero-only {
   background: #ffffff;
   border-radius: 20px;
   padding: 34px 28px;
-  box-shadow: 0 10px 30px rgba(40, 25, 15, 0.04);
-  border: 1px solid rgba(230, 222, 212, 0.65);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   display: flex;
   flex-direction: column;
 }
 
 .why-choose-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 18px 40px rgba(40, 25, 15, 0.08);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
+  border-color: rgba(212, 175, 55, 0.5);
 }
 
 .why-card-top {
@@ -3881,14 +3885,15 @@ div.desktop-hero-only {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #332219;
-  color: #ffffff;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: var(--gold-light);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.15rem;
   flex-shrink: 0;
-  box-shadow: 0 4px 12px rgba(51, 34, 25, 0.2);
+  box-shadow: 0 4px 14px rgba(6, 9, 17, 0.25);
+  border: 1px solid rgba(212, 175, 55, 0.4);
 }
 
 .why-card-number {
@@ -3896,15 +3901,15 @@ div.desktop-hero-only {
   font-size: 2.85rem;
   font-weight: 700;
   line-height: 1;
-  color: #e5ddd5;
+  color: #cbd5e1;
   letter-spacing: -0.5px;
   user-select: none;
 }
 
 .why-card-title {
   font-size: 1.25rem;
-  font-weight: 700;
-  color: #1f1b18;
+  font-weight: 800;
+  color: var(--primary);
   margin-bottom: 12px;
   letter-spacing: -0.2px;
   font-family: var(--font-heading);
@@ -3913,7 +3918,7 @@ div.desktop-hero-only {
 .why-card-desc {
   font-size: 0.93rem;
   line-height: 1.62;
-  color: #685e56;
+  color: var(--text-muted);
   margin: 0;
 }
 
@@ -3959,9 +3964,9 @@ div.desktop-hero-only {
    MATERIALS & HARDWARE STRIP (BRAND TRUST MARQUEE)
    ========================================================================== */
 .materials-strip-section {
-  background-color: #f5efe6;
-  border-top: 1px solid rgba(212, 175, 55, 0.2);
-  border-bottom: 1px solid rgba(220, 210, 198, 0.7);
+  background-color: #f8fafc;
+  border-top: 1px solid rgba(212, 175, 55, 0.25);
+  border-bottom: 1px solid var(--border-color);
   padding: 18px 0;
   position: relative;
   overflow: hidden;
@@ -3980,14 +3985,14 @@ div.desktop-hero-only {
   font-weight: 700;
   letter-spacing: 2.2px;
   text-transform: uppercase;
-  color: #826e5e;
+  color: var(--primary);
   white-space: nowrap;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   gap: 10px;
   padding-right: 28px;
-  border-right: 1.5px solid rgba(130, 110, 94, 0.25);
+  border-right: 1.5px solid var(--border-color);
 }
 
 .materials-marquee-container {

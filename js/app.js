@@ -748,7 +748,51 @@ class ARCApp {
         </div>
       </section>
 
-      <!-- WHY CUDDALORE HOMEOWNERS CHOOSE US (Matching Reference Design) -->
+      <!-- 3D COVERFLOW "Featured Project Realizations" Section (Moved above THE ARC ADVANTAGE) -->
+      <section class="section coverflow-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title" style="font-size: 2.4rem;">Featured Project Realizations</h2>
+            <p class="section-subtitle">Explore our custom luxury villas, turnkey residences &amp; commercial landmarks across Cuddalore</p>
+          </div>
+
+          <!-- Category Filter Pills -->
+          <div class="coverflow-filter-pills" id="coverflow-pills">
+            <button class="coverflow-pill active" onclick="window.ARC_APP.filterCoverflow('all', this)">All Projects</button>
+            <button class="coverflow-pill" onclick="window.ARC_APP.filterCoverflow('Cuddalore', this)">Cuddalore</button>
+            <button class="coverflow-pill" onclick="window.ARC_APP.filterCoverflow('Residential', this)">Residential</button>
+            <button class="coverflow-pill" onclick="window.ARC_APP.filterCoverflow('Commercial', this)">Commercial</button>
+            <button class="coverflow-pill" onclick="window.ARC_APP.filterCoverflow('Renovation', this)">Renovation</button>
+            <button class="coverflow-pill" onclick="window.ARC_APP.filterCoverflow('Carpentry', this)">Interiors &amp; Woodwork</button>
+            <button class="coverflow-pill" onclick="window.ARC_APP.filterCoverflow('Flooring', this)">Flooring &amp; Marble</button>
+          </div>
+
+          <!-- 3D Stage Container -->
+          <div class="coverflow-container">
+            <div class="coverflow-stage" id="coverflow-stage">
+              <!-- Dynamically rendered 3D cards -->
+            </div>
+          </div>
+
+          <!-- Navigation Arrow Buttons -->
+          <div class="coverflow-nav-controls">
+            <button class="coverflow-arrow-btn" onclick="window.ARC_APP.coverflowPrev()" title="Previous Project">
+              <i class="fas fa-arrow-left"></i>
+            </button>
+            <button class="coverflow-arrow-btn" onclick="window.ARC_APP.coverflowNext()" title="Next Project">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div style="text-align: center; margin-top: 28px;">
+            <a href="#projects" data-nav="projects" class="btn btn-secondary">
+              Explore Full Portfolio <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY CUDDALORE HOMEOWNERS CHOOSE US (THE ARC ADVANTAGE) -->
       <section class="why-choose-section">
         <div class="container">
           <div class="why-choose-grid">
@@ -859,50 +903,6 @@ class ARCApp {
                 <div class="exp-text">Established in Cuddalore</div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 3D COVERFLOW "Our Projects" Section (Matching Reference Style) -->
-      <section class="section coverflow-section">
-        <div class="container">
-          <div class="section-header">
-            <h2 class="section-title" style="font-size: 2.4rem;">Featured Project Realizations</h2>
-            <p class="section-subtitle">Explore our custom luxury villas, turnkey residences &amp; commercial landmarks across Cuddalore</p>
-          </div>
-
-          <!-- Category Filter Pills -->
-          <div class="coverflow-filter-pills" id="coverflow-pills">
-            <button class="coverflow-pill active" onclick="window.ARC_APP.filterCoverflow('all', this)">All Projects</button>
-            <button class="coverflow-pill" onclick="window.ARC_APP.filterCoverflow('Cuddalore', this)">Cuddalore</button>
-            <button class="coverflow-pill" onclick="window.ARC_APP.filterCoverflow('Residential', this)">Residential</button>
-            <button class="coverflow-pill" onclick="window.ARC_APP.filterCoverflow('Commercial', this)">Commercial</button>
-            <button class="coverflow-pill" onclick="window.ARC_APP.filterCoverflow('Renovation', this)">Renovation</button>
-            <button class="coverflow-pill" onclick="window.ARC_APP.filterCoverflow('Carpentry', this)">Interiors & Woodwork</button>
-            <button class="coverflow-pill" onclick="window.ARC_APP.filterCoverflow('Flooring', this)">Flooring & Marble</button>
-          </div>
-
-          <!-- 3D Stage Container -->
-          <div class="coverflow-container">
-            <div class="coverflow-stage" id="coverflow-stage">
-              <!-- Dynamically rendered 3D cards -->
-            </div>
-          </div>
-
-          <!-- Navigation Arrow Buttons -->
-          <div class="coverflow-nav-controls">
-            <button class="coverflow-arrow-btn" onclick="window.ARC_APP.coverflowPrev()" title="Previous Project">
-              <i class="fas fa-arrow-left"></i>
-            </button>
-            <button class="coverflow-arrow-btn" onclick="window.ARC_APP.coverflowNext()" title="Next Project">
-              <i class="fas fa-arrow-right"></i>
-            </button>
-          </div>
-
-          <div style="text-align: center; margin-top: 28px;">
-            <a href="#projects" data-nav="projects" class="btn btn-secondary">
-              Explore Full Portfolio <i class="fas fa-arrow-right"></i>
-            </a>
           </div>
         </div>
       </section>
